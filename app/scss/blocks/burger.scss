@@ -1,0 +1,37 @@
+.burger {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  .burger__line {
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    background-color: #81B3D2;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .burger__line:first-child {
+    transform: translateY(-8px);
+  }
+  .burger__line:last-child {
+    transform: translateY(8px);
+  }
+  .burger--active .burger__line:first-child {
+    transform: translateY(0) rotate(45deg);
+    background-color:$body-bg;
+    top: 40%;
+  }
+  .burger--active .burger__line:nth-child(2) {
+    opacity: 0;
+  }
+  .burger--active .burger__line:last-child {
+    transform: translateY(0) rotate(-45deg);
+    background-color:$body-bg;
+    top: 40%;
+  }
