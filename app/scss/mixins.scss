@@ -3,7 +3,7 @@
 }
 
 @mixin media ($media-width){
-    @media (max-width: $media-width) {
+    @media (min-width: $media-width) {
       @content;
     }
 }

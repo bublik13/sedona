@@ -12,44 +12,56 @@
 </head>
 
 <body class="body js-body">
+     <!-- <img class="pp" src="img/mobile-pp.jpg" alt=""> -->
+    <style>
+      .pp{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 999;
+        transform: translateX(-50%);
+        opacity: .6;
+        pointer-events: none;
+      }
+    </style>
     <header class="header">
+      <div class="header__top">
         <div class="header__container container">
-          <div class="header__top">
-            <nav class="nav header__nav js-nav">
-              <ul class="nav__list nav__list--column">
-                <li class="nav__item">
-                  <a href="#" class="nav__link">ГЛАВНАЯ</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">ФОТО И ВИДЕО</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">ФОРМА ОТЗЫВА</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">HTML ACADEMY</a>
-                </li>
-              </ul>
-            </nav>
-            <a href="#" class="header__logo logo">
-                <img width="108" height="84" src="img/logo.svg" alt="logo" class="logo__img"/>
-              </a>
-            <button type="button" aria-label="close" class="burger header__burger js-burger">
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-            </button>
-          </div>
-          <!-- <div class="header__center"> -->
-              <!-- <div class="header__back"><img idth="901" height="389"src="img/back.jpg" alt="sedona" class="header__img"> -->
-            <!-- <h1 class="header__h1 h1 h1--reponsive">Первый курс<br> по компьютерной сборке</h1>
-            <div class="header__timer timer">
-              <div class="timer__item">
-              </div>
-            </div>
-          </div> -->
+          <nav class="nav header__nav js-nav">
+            <ul class="nav__list nav__list--column">
+              <li class="nav__item">
+                <a href="#" class="nav__link">ГЛАВНАЯ</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">ФОТО И ВИДЕО</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">ФОРМА ОТЗЫВА</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">HTML ACADEMY</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="header__logo logo">
+            <img width="108" height="84" src="img/logo.svg" alt="logo" class="logo__img"/>
+          </a>
+          <button type="button" aria-label="close" class="burger header__burger js-burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
         </div>
-      </header>
+      </div>
+      <div class="header__center">
+              <!-- <div class="header__back"><img idth="901" height="389"src="img/back.jpg" alt="sedona" class="header__img"> -->
+        <!-- <h1 class="header__h1 h1 h1--reponsive">Первый курс<br> по компьютерной сборке</h1>
+        <div class="header__timer timer">
+          <div class="timer__item">
+          </div>
+        </div> -->
+      </div>
+    </header>
 
 
     <!-- подключаем js -->

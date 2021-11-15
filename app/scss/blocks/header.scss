@@ -1,15 +1,12 @@
 .header {
-    background: url(../img/intro.jpg) center center/ cover no-repeat;
-    position: relative;
-    margin-top: 80px;
+  position: relative;
+}
+.header__top {
+  background-color: $body-bg;
 }
 .header__container {
   padding-top: 16px;
-  padding-bottom: 218px;
-}
-.header__top {
   display: flex;
-  margin-top: -56px;
 }
 .header__nav {
   position: fixed;
@@ -25,13 +22,9 @@
   opacity: 0;
   display: flex;
   align-items: center;
-  //   justify-content: center;
   padding-top: 23px;
   overflow-y: auto;
 }
-// @include media($md) {
-//   padding-top: 0;
-// }
 .header__nav--active {
   transform: translateX(0);
   opacity: 1;
@@ -39,13 +32,20 @@
 }
 .header__logo {
   margin-left: auto;
+  @include media($md) {
+    margin-right: auto;
+  }
 }
 .header__burger {
   margin-left: auto;
   z-index: 3;
   position: relative;
-  //   @include media($lg) {
-  //     display: block;
-  //   }
+  @include media($md) {
+    display: none;
+  }
 }
-
+.header__center {
+  background: url(../img/intro.jpg) center center/ cover no-repeat;
+  min-height: 345px;
+  margin-top: -21px;
+}
