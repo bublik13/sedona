@@ -24,6 +24,12 @@
   align-items: center;
   padding-top: 23px;
   overflow-y: auto;
+  @include media($md) {
+    position: static;
+    opacity: 1;
+    transform: none;
+    background-color: $body-bg;
+  }
 }
 .header__nav--active {
   transform: translateX(0);

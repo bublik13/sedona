@@ -3,10 +3,14 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+//   @include media($md) {
+// flex-direction: row;
+//   }
 }
 .nav__list {
   list-style-type: none;
   width: 100%;
+  display: flex;
 }
 .nav__item {
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
@@ -15,4 +19,67 @@
 .nav__link {
   color: $second-color;
   @include font(18px, 40px, 700);
+  @include media($md) {
+    color: #000;
+  }
 }
+// .nav {
+//   flex-grow: 1;
+// }
+// .nav__list {
+//   display: flex;
+//   justify-content: center;
+//   list-style-type: none;
+//   margin-left: 110px;
+//   @include media($xl) {
+//     margin-left: 0;
+//   }
+// }
+// .nav__link {
+//   padding-left: 28px;
+//   padding-right: 28px;
+//   @include font(16px, 34px, 400);
+//   color: $brand-color;
+//   display: block;
+//   position: relative;
+//   @include media($lg) {
+//     @include font(26px, 34px, 400);
+//   }
+// }
+// .nav__link:after {
+//   content: " ";
+//   position: absolute;
+//   left: 28px;
+//   bottom: -4px;
+//   right: 28px;
+//   height: 2px;
+//   background: $line-bg;
+//   transform: scaleX(0);
+//   transform-origin: center center;
+//   transition: transform 0.2s ease-in;
+//   @include media($sm) {
+//     left: 0;
+//     right: 0;
+//   }
+// }
+// .nav__link:hover:after {
+//   transform: scaleX(1);
+//   transform-origin: center center;
+// }
+// @include media($lg) {
+//   .nav__list--column {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+//   .nav__list--column .nav__link {
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//   }
+// }
+// @include media($sm) {
+//   .nav__list--column .nav__link {
+//     margin-bottom: 21px;
+//     padding: 0;
+//   }
+// }
