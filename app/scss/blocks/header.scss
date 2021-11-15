@@ -50,6 +50,9 @@
     justify-content: center;
     margin-top: -55px;
   }
+  // @include media($lg) {
+  //   background-color: #81B3D3;
+  // }
 }
 .header__burger {
   margin-left: auto;
@@ -65,5 +68,8 @@
   margin-top: -21px;
   @include media($md) {
     min-height: 518px;
+  }
+  @include media($lg) {
+    min-height: 620px;
   }
 }

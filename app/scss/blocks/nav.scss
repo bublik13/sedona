@@ -34,6 +34,11 @@
     margin-left: auto;
   }
 }
+.nav__item:nth-child(4) {
+  @include media($lg-md) {
+    margin-left: auto;
+  }
+}
 .nav__link {
   color: $second-color;
   @include font(18px, 40px, 700);
