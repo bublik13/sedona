@@ -7,6 +7,9 @@
 .header__container {
   padding-top: 16px;
   display: flex;
+  @include media($md) {
+    display: block;
+  }
 }
 .header__nav {
   position: fixed;
@@ -29,6 +32,7 @@
     opacity: 1;
     transform: none;
     background-color: $body-bg;
+    padding-top: 0;
   }
 }
 .header__nav--active {
@@ -38,8 +42,13 @@
 }
 .header__logo {
   margin-left: auto;
+  padding-left: 25px;
   @include media($md) {
     margin-right: auto;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -55px;
   }
 }
 .header__burger {
@@ -54,4 +63,7 @@
   background: url(../img/intro.jpg) center center/ cover no-repeat;
   min-height: 345px;
   margin-top: -21px;
+  @include media($md) {
+    min-height: 518px;
+  }
 }
