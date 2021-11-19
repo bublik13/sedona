@@ -1,12 +1,14 @@
 //bacgrounds
 $body-bg: #ffffff;
-$body-bg-text: #81B3D2;
+$body-bg-text: #81b3d2;
+$body-bg-focus: #5496bd;
+$body-bg-hover: #669ec0;
 //colors
 $brand-color: #000000;
-$second-color: #FFFFFF;
+$second-color: #ffffff;
 //button-colors
-$button-primary-bg: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
-$button-brand-bg: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+// $button-primary-bg: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+// $button-brand-bg: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
 //progress-bars-bg
 $progress-line-primary-bg: linear-gradient(
   94.78deg,
@@ -14,16 +16,16 @@ $progress-line-primary-bg: linear-gradient(
   #451046 93.72%
 );
 $progress-line-bg: #ffffff;
-//graph-bars-bg
-$graph-line-bg: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
-$graph-line-bg-vertical: linear-gradient(185deg, #c89afc 9.51%, #7c6afa 90.23%);
-//frame-bars-bg
-$frame-line-bg: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
-//line-bars-bg
-$line-bg: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+//hover-bars-bg
+// $hover-bg-white: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+// $hover-bg: linear-gradient(185deg, #c89afc 9.51%, #7c6afa 90.23%);
+// //frame-bars-bg
+// $frame-line-bg: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+// //line-bars-bg
+// $line-bg: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
 
 //fonts
-$basic-family: "PT Sans","Roboto", Arial, Helvetica, sans-serif;
+$basic-family: "PT Sans", "Roboto", Arial, Helvetica, sans-serif;
 //container
 $container-width: 320px;
 //border

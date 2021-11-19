@@ -12,7 +12,7 @@
 </head>
 
 <body class="body js-body">
-     <!-- <img class="pp" src="img/mobile-pp.jpg" alt=""> -->
+     <!-- <img class="pp" src="img/desktop.jpg" alt=""> -->
     <style>
       .pp{
         position: absolute;
@@ -27,6 +27,12 @@
     <header class="header">
       <div class="header__top">
         <div class="header__container container">
+          <a href="#" class="header__logo logo">
+            <picture>
+              <source media="(min-width: 1200px)" width="187" height="97"srcset="img/logo-desktop.svg">
+              <img width="108" height="84" src="img/logo.svg" alt="logo" style="width:auto;" class="logo__img"/>
+            </picture> 
+          </a>
           <nav class="nav header__nav js-nav">
             <ul class="nav__list nav__list--column">
               <li class="nav__item">
@@ -43,9 +49,6 @@
               </li>
             </ul>
           </nav>
-          <a href="#" class="header__logo logo">
-            <img width="108" height="84" src="img/logo.svg" alt="logo" class="logo__img"/>
-          </a>
           <button type="button" aria-label="close" class="burger header__burger js-burger">
             <span class="burger__line"></span>
             <span class="burger__line"></span>
@@ -54,12 +57,12 @@
         </div>
       </div>
       <div class="header__center">
-              <!-- <div class="header__back"><img idth="901" height="389"src="img/back.jpg" alt="sedona" class="header__img"> -->
-        <!-- <h1 class="header__h1 h1 h1--reponsive">Первый курс<br> по компьютерной сборке</h1>
-        <div class="header__timer timer">
-          <div class="timer__item">
-          </div>
-        </div> -->
+        <div class="header__container-center container">
+          <div class="header__back"> <picture>
+            <source media="(min-width: 768px)" width="461" height="350" srcset="img/text-back-tablet.svg">
+            <img width="282" height="214" src="img/text-back.svg" alt="sedona" style="width:auto;"/>
+          </picture> 
+        </div>
       </div>
     </header>
 
