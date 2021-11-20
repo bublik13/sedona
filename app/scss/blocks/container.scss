@@ -1,11 +1,12 @@
 .container {
-    min-width: $container-width;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-    // @include media($sm) {
-    //     padding-left: 25px;
-    //     padding-right: 25px;
-    // }
-  }
+  min-width: $container-min-width;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  // @include media($sm) {
+  //     padding-left: 25px;
+  //     padding-right: 25px;
+  // }
+}

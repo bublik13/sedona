@@ -1,6 +1,6 @@
 .header__top {
   background-color: $body-bg;
-  padding-bottom: 22px;
+  padding-bottom: 60px;
   @include media($md) {
     padding-top: 0;
     padding-bottom: 10px;
@@ -19,8 +19,7 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-color: $body-bg-text;
+  background-color: $nav-bg;
   z-index: 2;
   transition: transform 0.2s ease;
   transform: translateX(-100%);
@@ -28,7 +27,6 @@
   opacity: 0;
   display: flex;
   align-items: center;
-  padding-top: 23px;
   overflow-y: auto;
   @include media($md) {
     position: static;
@@ -36,6 +34,7 @@
     transform: none;
     background-color: $body-bg;
     padding-top: 0;
+    pointer-events: auto;
   }
 }
 .header__nav--active {
@@ -54,19 +53,23 @@
   margin-left: auto;
   z-index: 3;
   position: relative;
-  margin-top: 15px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
   @include media($md) {
     display: none;
   }
 }
-.header__center {
+.header__container-center {
   position: relative;
+  padding: 80px 0;
   background: url(../img/back-mobile.jpg) center center/ cover no-repeat;
   @include media($md) {
     background: url(../img/back-desktop.jpg) center center/ cover no-repeat;
+    padding: 79px 0 89px;
   }
 }
-.header__center:after {
+.header__container-center :after {
   content: " ";
   left: 0;
   bottom: 0;
@@ -76,13 +79,13 @@
   width: 100%;
   background: url(../img/intro-triangle.svg) center center/ cover no-repeat;
 }
-.header__container-center {
-  padding: 80px 0;
-  @include media($md) {
-    padding: 79px 0 89px;
-  }
-}
 .header__back {
   display: flex;
   justify-content: center;
+}
+.header__img {
+  @include media($md) {
+    height: auto;
+    min-width: 461px;
+  }
 }
