@@ -63,10 +63,16 @@
 .header__container-center {
   position: relative;
   padding: 80px 0;
-  background: url(../img/back-mobile.jpg) center center/ cover no-repeat;
+  background: url("../img/back-mobile-x2.jpg") bottom right/ cover no-repeat;
   @include media($md) {
-    background: url(../img/back-desktop.jpg) center center/ cover no-repeat;
-    padding: 79px 0 89px;
+    background-image: -webkit-image-set(
+      url("../img/back-desktop-x1.jpg") 1x,
+      url("../img/back-desktop-x2.webp") 2x
+    );
+    background-image: image-set(
+      url("../img/back-desktop-x1.jpg") 1x,
+      url("../img/back-desktop-x2.webp") 2x
+    );
   }
 }
 .header__container-center:after {
