@@ -15,11 +15,6 @@
   left: 0;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
-.burger--active{
-  position: fixed;
-  top: 16px;
-  right: 16px;
-}
 .burger__line:first-child {
   transform: translateY(-8px);
 }

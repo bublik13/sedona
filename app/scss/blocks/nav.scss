@@ -3,9 +3,17 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 223px;
+}
+.nav:before{
+  content: ' ';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 12px;
+  background: $line-transparent;
   @include media($md) {
-    min-height: auto;
+    background: transparent;
   }
 }
 .nav__list {
@@ -17,6 +25,7 @@
   }
 }
 .nav__item {
+  position: relative;
   padding: 10px 10px 5px 10px;
   text-align: center;
   @include media($md) {
@@ -25,24 +34,15 @@
     width: 20%;
   }
 }
-.nav__item:nth-child(1),
-.nav__item:nth-child(2),
-.nav__item:nth-child(3) {
-  border-bottom: 1px solid $border;
-  @include media($md) {
-    border-bottom: none;
-  }
-}
-.nav__item:nth-child(2),
-.nav__item:nth-child(3),
-.nav__item:nth-child(4) {
-  border-top: 1px solid $border-transparent;
-  @include media($md) {
-    border-bottom: none;
-  }
-}
-.nav__item:nth-child(4) {
-  background: $line-transparent;
+.nav__item:not(:last-child):before{
+  content: ' ';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient($border 50%, $border-transparent 0);
+
   @include media($md) {
     background: transparent;
   }
@@ -95,7 +95,7 @@
     color: $active-hover;
   }
 }
-.nav__link--active:focus {
+.nav__link--active:active {
   @include media($md) {
     color: $active-focus;
     opacity: 0.3;
