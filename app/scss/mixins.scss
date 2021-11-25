@@ -1,0 +1,9 @@
+@mixin font($font-size, $line-height, $font-weight: null, $font-family:$basic-family) {
+    font: $font-weight #{$font-size}/#{$line-height} $font-family;    
+}
+
+@mixin media ($media-width){
+    @media (min-width: $media-width) {
+      @content;
+    }
+}

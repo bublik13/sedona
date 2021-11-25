@@ -1,0 +1,10 @@
+body {
+    font-family: $basic-family;
+    @include font(16px, 24px, 400);
+    color: $brand-color;
+    background-color: $body-bg;
+  }
+  a{
+    color: $brand-color;
+    text-decoration: none;
+  }

@@ -1,41 +1,79 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/main.css">
 </head>
-
-<body>
-    <svg>
-        <use xlink:href="img/svg/sprite.svg#clock"></use>
-    </svg>
-    <svg>
-        <use xlink:href="img/svg/sprite.svg#coin"></use>
-    </svg>
-    <svg>
-        <use xlink:href="img/svg/sprite.svg#clouds-fill"></use>
-    </svg>
-    <!-- пример подключения картинок, и html-блоков, удалить перед началом работы -->
-    <div class="test">
-        <!-- подключаем шапку -->
-        @@include('blocks/header.html')
-
-        <div class="test__content">
-            <img class="test__img" src="img/mentor.jpg" alt="mentor picture">
-            <div class="test__pic"></div>
+<body class="body js-body">
+     <!-- <img class="pp" src="img/desktop.jpg" alt=""> -->
+    <style>
+      .pp{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 999;
+        transform: translateX(-50%);
+        opacity: .6;
+        pointer-events: none;
+      }
+    </style>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <a href="#" class="header__logo logo">
+            <picture>
+              <source media="(min-width: 1200px)" width="187" height="97"srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" width="102" height="84"srcset="img/logo-tablet.svg">
+              <img width="102" height="84" src="img/logo.svg" alt="logo" style="width:auto;" class="logo__img"/>
+            </picture> 
+          </a>
+          <nav class="nav header__nav js-nav nav--active">
+            <ul class="nav__list nav__list--column">
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--active">ГЛАВНАЯ</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--active">ФОТО И ВИДЕО</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--active">ФОРМА ОТЗЫВА</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--active">HTML ACADEMY</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" aria-label="close" class="burger header__burger js-burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
         </div>
-
-        <!-- подключаем подвал -->
-        @@include('blocks/footer.html')
-
-    </div>
-
-
+      </div>
+      <div class="header__center">
+        <div class="header__container-center container">
+          <div class="header__back"> 
+            <img width="282" height="214" src="img/text-back.svg" alt="sedona" class="header__img"/>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- подключаем js -->
-    <script src="js/main.js"></script>
-</body>
+    <script>
+        const body = document.querySelector('.js-body');
+        const nav = document.querySelector('.js-nav');
+        const burger = document.querySelector('.js-burger');
 
+        burger.addEventListener('click', ()=>{  
+          burger.classList.toggle('burger--active');
+          nav.classList.toggle('header__nav--active');
+          body.classList.toggle('body--lock');
+        });
+      </script>
+</body>
 </html>

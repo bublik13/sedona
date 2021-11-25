@@ -1,5 +1,28 @@
 //bacgrounds
-$body-bg: #ff55;
+$body-bg: #ffffff;
+$nav-bg: #81b3d2;
+$active: #766357;
+$active-hover: #604e43;
+$active-focus: #766357;
+
+$body-bg-focus: #5496bd;
+$body-bg-hover: #669ec0;
+//colors
+$brand-color: #000000;
+$second-color: #ffffff;
 
 //fonts
-$basic-family: 'Roboto', Arial, Helvetica, sans-serif;
+$basic-family: "PT Sans", "Roboto", Arial, Helvetica, sans-serif;
+//container
+$container-min-width: 320px;
+$container-max-width: 1200px;
+//border
+$border: rgba(1, 1, 1, 0.2);
+$border-transparent: rgba(255, 255, 255, 0.2);
+$line-transparent: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0) 0%,
+  rgba(0, 0, 0, 0.2) 100%
+);
+
+$md: 768px;

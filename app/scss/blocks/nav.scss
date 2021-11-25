@@ -1,0 +1,103 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.nav:before{
+  content: ' ';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 12px;
+  background: $line-transparent;
+  @include media($md) {
+    background: transparent;
+  }
+}
+.nav__list {
+  list-style-type: none;
+  width: 100%;
+  @include media($md) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.nav__item {
+  position: relative;
+  padding: 10px 10px 5px 10px;
+  text-align: center;
+  @include media($md) {
+    padding: 15px 10px 5px 10px;
+    box-shadow: none;
+    width: 20%;
+  }
+}
+.nav__item:not(:last-child):before{
+  content: ' ';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient($border 50%, $border-transparent 0);
+
+  @include media($md) {
+    background: transparent;
+  }
+}
+.nav__item:nth-child(3) {
+  @include media($md) {
+    margin-left: 20%;
+  }
+}
+.nav__item:hover {
+  background-color: $body-bg-hover;
+  @include media($md) {
+    background: transparent;
+  }
+}
+.nav__item:focus {
+  background-color: $body-bg-focus;
+  @include media($md) {
+    background: transparent;
+  }
+}
+.nav__link {
+  display: block;
+  color: $second-color;
+  @include font(18px, 40px, 700);
+  @include media($md) {
+    color: $brand-color;
+    @include font(14px, 26px, 700);
+  }
+}
+.nav__link:hover {
+  @include media($md) {
+    color: $second-color;
+  }
+}
+.nav__link:focus {
+  opacity: 0.3;
+  @include media($md) {
+    color: $brand-color;
+    opacity: 0.3;
+  }
+}
+.nav__link--active{
+  @include media($md) {
+    color: $active;
+  }
+}
+.nav__link--active:hover {
+  @include media($md) {
+    color: $active-hover;
+  }
+}
+.nav__link--active:active {
+  @include media($md) {
+    color: $active-focus;
+    opacity: 0.3;
+  }
+}

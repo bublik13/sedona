@@ -1,0 +1,48 @@
+.burger {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.burger__line {
+  position: absolute;
+  width: 23px;
+  height: 4px;
+  background-color: $nav-bg;
+  top: 50%;
+  margin-top: -1px;
+  left: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.burger__line:first-child {
+  transform: translateY(-8px);
+}
+.burger__line:last-child {
+  transform: translateY(8px);
+}
+.burger--active .burger__line:first-child {
+  transform: translateY(0) rotate(45deg);
+  background-color: $body-bg;
+}
+.burger--active .burger__line:nth-child(2) {
+  background-color: transparent;
+  opacity: 0;
+  background: transparent;
+}
+.burger--active .burger__line:last-child {
+  transform: translateY(0) rotate(-45deg);
+  background-color: $body-bg;
+}
+.burger:hover .burger__line {
+  opacity: 0.6;
+}
+.burger:focus .burger__line {
+  opacity: 0.3;
+}
+.burger--active:hover .burger__line:nth-child(odd) {
+  opacity: 0.6;
+}
+.burger--active:focus .burger__line:nth-child(odd) {
+  opacity: 0.3;
+}
