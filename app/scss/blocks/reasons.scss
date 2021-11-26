@@ -1,5 +1,8 @@
+.reasons__container {
+  padding: 0;
+}
 .reasons__top {
-  background-color: $body-bg;
+  padding: 0 16px;
 }
 .reasons__title {
   margin-top: 42px;
@@ -20,7 +23,7 @@
 .reasons__subtitle {
   color: $brand-color;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 28px;
   @include media($md) {
     margin-bottom: 52px;
   }
@@ -28,6 +31,30 @@
     margin-bottom: 41px;
   }
 }
-// .reasons__item {
-//   // color:#fff;
-// }
+.reasons__bottom{
+  @include media($md) {
+    display: flex;
+  }
+}
+.reasons__item {
+  padding: 10px 0;
+  color: $second-color;
+  background-color: $nav-bg;
+  text-align: center;
+  @include media($md) {
+    width: 33%;
+    padding: 10px 16px;
+  }
+  @include media($lg) {
+    padding: 47px 42px 57px;
+  }
+}
+.reasons__img{
+  display: block;
+  width: 100%;
+  min-height: 260px;
+  background: url("../img/photo-city-mobile-x2.jpg") center center/ cover no-repeat;
+  @include media($md) {
+    min-height: 256px;
+  }
+}

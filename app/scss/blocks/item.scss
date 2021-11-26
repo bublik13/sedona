@@ -1,0 +1,13 @@
+.item__name{
+    margin-top: 45px;
+    margin-bottom: 10px;
+    @include font(18px, 26px, 700);
+}
+.item__number{
+    margin-bottom: 17px;
+    @include font(14px, 21px, 400);
+}
+.item__desc{
+    margin-bottom: 29px;
+    @include font(14px, 21px, 400);
+}
