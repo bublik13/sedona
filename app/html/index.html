@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="body js-body">
-     <!-- <img class="pp" src="img/mobile.jpg" alt=""> -->
+     <!-- <img class="pp" src="img/desktop.jpg" alt=""> -->
     <style>
       .pp{
         position: absolute;
@@ -86,7 +86,11 @@
                 СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
               </div>
             </div>
-            <span class="reasons__img"></span>
+            <picture>
+              <source media="(min-width: 1200px)" width="800" height="256"srcset="img/photo-city-desktop-1x.jpg">
+              <source media="(min-width: 768px)" width="512" height="256"srcset="img/photo-city-tablet-1x.jpg">
+              <img width="520" height="260" src="img/photo-city-mobile-x2.jpg" alt="photo-city" class="reasons__img"/>
+            </picture> 
           </div>
         </div>
       </div>

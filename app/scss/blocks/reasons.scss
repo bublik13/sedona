@@ -28,33 +28,46 @@
     margin-bottom: 52px;
   }
   @include media($lg) {
-    margin-bottom: 41px;
+    margin-bottom: 42px;
   }
 }
-.reasons__bottom{
+.reasons__bottom {
   @include media($md) {
     display: flex;
+    margin-bottom: 60px;
   }
 }
 .reasons__item {
+  position: relative;
   padding: 10px 0;
   color: $second-color;
   background-color: $nav-bg;
   text-align: center;
+  flex-grow: 1;
   @include media($md) {
     width: 33%;
-    padding: 10px 16px;
+    padding: 10px 20px;
   }
   @include media($lg) {
-    padding: 47px 42px 57px;
+    padding: 10px 55px;
   }
 }
-.reasons__img{
+.reasons__item:after {
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 37px;
+  width: 100%;
+  background: url(../img/intro-triangle-blue.svg) center center/ cover no-repeat;
+  margin-top: -1px;
+  @include media($md) {
+    display: none;
+  }
+}
+.reasons__img {
   display: block;
   width: 100%;
-  min-height: 260px;
-  background: url("../img/photo-city-mobile-x2.jpg") center center/ cover no-repeat;
-  @include media($md) {
-    min-height: 256px;
-  }
+  background-color: $nav-bg;
 }
