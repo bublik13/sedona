@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="body js-body">
-     <!-- <img class="pp" src="img/desktop.jpg" alt=""> -->
+     <!-- <img class="pp" src="img/mobile.jpg" alt=""> -->
     <style>
       .pp{
         position: absolute;
@@ -65,34 +65,32 @@
     </header>
     <section class="reasons">
       <div class="reasons__container container">
-        <div class="reasons__col">
-          <div class="reasons__top">
-            <h2 class="reasons__title title-h2">
-              СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
-            </h2>
-            <div class="reasons__subtitle subtitle">
-              РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!
-            </div>
-          </div>
-          <div class="reasons__bottom">
-            <div class="reasons__item item">
-              <div class="item__name">
-                НАСТОЯЩИЙ ГОРОДОК
-              </div>
-              <div class="item__number">
-                — №1 —
-              </div>
-              <div class="item__desc">
-                СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
-              </div>
-            </div>
-            <picture>
-              <source media="(min-width: 1200px)" width="800" height="256"srcset="img/photo-city-desktop-1x.jpg">
-              <source media="(min-width: 768px)" width="512" height="256"srcset="img/photo-city-tablet-1x.jpg">
-              <img width="520" height="260" src="img/photo-city-mobile-x2.jpg" alt="photo-city" class="reasons__img"/>
-            </picture> 
-          </div>
+        <div class="reasons__top">
+          <h2 class="reasons__title title-h2">
+            СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+          </h2>
+          <p class="reasons__subtitle subtitle">
+            РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!
+          </p>
         </div>
+        <article class="info reasons__info info--right info--triangle">
+          <div class="info__item">
+            <h3 class="info__name">
+              НАСТОЯЩИЙ ГОРОДОК
+            </h3>
+            <div class="info__number">
+              — №1 —
+            </div>
+            <p class="info__desc">
+              СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+            </p>
+          </div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-city-desktop-1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-city-tablet-1x.jpg">
+            <img width="520" height="260" src="img/photo-city-mobile-x2.webp" alt="photo-city" class="info__img"/>
+          </picture> 
+        </article>
       </div>
     </section>
     <!-- подключаем js -->

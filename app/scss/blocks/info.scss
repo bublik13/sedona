@@ -1,0 +1,81 @@
+.info--right {
+  @include media($md) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.info--triangle {
+  position: relative;
+}
+.info--triangle:after {
+  content: " ";
+  top: -22px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 37px;
+  width: 320px;
+  background: url(../img/intro-triangle-blue.svg) center center/cover no-repeat;
+  margin-top: -1px;
+  margin: 0 auto;
+  @include media($md) {
+    display: none;
+  }
+}
+.info__item {
+  padding: 10px 0;
+  color: $second-color;
+  background-color: $nav-bg;
+  text-align: center;
+  flex-grow: 1;
+  @include media($md) {
+    width: 66%;
+    padding: 10px 20px 10px 21px;
+  }
+  @include media($lg) {
+    padding: 10px 55px 10px 58px;
+  }
+}
+.info__name {
+  padding-top: 45px;
+  padding-bottom: 10px;
+  @include font(18px, 26px, 700);
+  @include media($md) {
+    padding-top: 30px;
+    padding-bottom: 12px;
+    @include font(21px, 26px, 700);
+  }
+  @include media($lg) {
+    padding: 38px 38px 12px 40px;
+  }
+}
+.info__number {
+  padding-bottom: 17px;
+  @include font(14px, 21px, 400);
+  @include media($md) {
+    padding-bottom: 23px;
+  }
+  @include media($lg) {
+    padding-bottom: 24px;
+  }
+}
+.info__desc {
+  padding-bottom: 29px;
+  @include font(14px, 21px, 400);
+}
+.info__img {
+  display: block;
+  width: 100%;
+  background-color: $nav-bg;
+  @include media($md) {
+    position: absolute;
+    width: 67%;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 257px;
+  }
+  @include media($lg) {
+  }
+}
