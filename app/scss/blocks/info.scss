@@ -6,18 +6,24 @@
 }
 .info--triangle {
   position: relative;
+  background-color: #81b3d2;
+  height: 88px;
+  padding-top: 60px;
+  @include media($md) {
+    padding-top: 0;
+    height: auto;
+  }
 }
 .info--triangle:after {
   content: " ";
-  top: -22px;
+  top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   position: absolute;
-  height: 37px;
-  width: 320px;
+  width: 100%;
   background: url(../img/intro-triangle-blue.svg) center center/cover no-repeat;
   margin-top: -1px;
-  margin: 0 auto;
   @include media($md) {
     display: none;
   }
@@ -30,10 +36,10 @@
   flex-grow: 1;
   @include media($md) {
     width: 66%;
-    padding: 10px 20px 10px 21px;
+    padding: 10px 20px 16px 21px;
   }
   @include media($lg) {
-    padding: 10px 55px 10px 58px;
+    padding: 10px 55px 27px 58px;
   }
 }
 .info__name {
@@ -60,6 +66,8 @@
   }
 }
 .info__desc {
+  max-width: 320px;
+  margin: 0 auto;
   padding-bottom: 29px;
   @include font(14px, 21px, 400);
 }
@@ -74,7 +82,7 @@
     right: 0;
     bottom: 0;
     top: 0;
-    height: 257px;
+    height: 255px;
   }
   @include media($lg) {
   }
