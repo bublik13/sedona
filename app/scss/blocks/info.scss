@@ -7,69 +7,78 @@
 .info--triangle {
   position: relative;
   background-color: #81b3d2;
-  height: 88px;
-  padding-top: 60px;
-  @include media($md) {
-    padding-top: 0;
-    height: auto;
-  }
+  // @include media($md) {
+  //   height: auto;
+  // }
 }
 .info--triangle:after {
   content: " ";
-  top: 0;
+  top: -4px;
   left: 0;
   right: 0;
-  bottom: 0;
   position: absolute;
   width: 100%;
-  background: url(../img/intro-triangle-blue.svg) center center/cover no-repeat;
+  height: 32px;
+  background: url(../img/intro-triangle-white.svg) center bottom/cover no-repeat;
   margin-top: -1px;
+  @include media($sm) {
+    top: 0;
+    height: 37px;
+  }
   @include media($md) {
     display: none;
   }
 }
 .info__item {
-  padding: 10px 0;
+  padding: 50px 0 25px 0;
   color: $second-color;
   background-color: $nav-bg;
   text-align: center;
   flex-grow: 1;
   @include media($md) {
     width: 66%;
-    padding: 10px 20px 16px 21px;
+    padding: 30px 20px 16px 21px;
   }
   @include media($lg) {
-    padding: 10px 55px 27px 58px;
+    padding: 38px 55px 27px 55px;
   }
 }
 .info__name {
-  padding-top: 45px;
-  padding-bottom: 10px;
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 12px;
   @include font(18px, 26px, 700);
   @include media($md) {
-    padding-top: 30px;
-    padding-bottom: 12px;
+    max-width: 200px;
     @include font(21px, 26px, 700);
   }
   @include media($lg) {
-    padding: 38px 38px 12px 40px;
+    padding: 7px 13px 13px 20px;
   }
 }
 .info__number {
+  max-width: 320px;
+  margin: 0 auto;
   padding-bottom: 17px;
   @include font(14px, 21px, 400);
   @include media($md) {
     padding-bottom: 23px;
   }
   @include media($lg) {
-    padding-bottom: 24px;
+    padding-bottom: 22px;
+    padding-left: 5px;
   }
 }
 .info__desc {
   max-width: 320px;
   margin: 0 auto;
-  padding-bottom: 29px;
+  padding-bottom: 15px;
   @include font(14px, 21px, 400);
+  @include media($lg) {
+    max-width: 293px;
+    padding: 2px 5px 5px 7px;
+  }
 }
 .info__img {
   display: block;

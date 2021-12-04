@@ -2,33 +2,34 @@
   padding: 0;
 }
 .reasons__top {
-  padding: 10px 7px 27px;
+  padding: 39px 7px 0;
   @include media($md) {
     padding: 10px 7px;
   }
 }
 .reasons__title {
-  margin-top: 39px;
+  max-width: 320px;
+  margin: 0 auto;
   color: $brand-color;
   text-align: center;
-  margin-bottom: 32px;
-  padding: 0 10px;
+  padding: 10px 10px 32px;
   @include media($md) {
-    margin-bottom: 31px;
-    padding: 0 124px;
-    margin-top: 35px;
+    padding: 35px 0 31px;
+    max-width: 520px;
   }
   @include media($lg) {
-    margin-top: 46px;
-    padding: 0 358px;
+    padding-top: 46px;
   }
 }
 .reasons__subtitle {
+  max-width: 320px;
+  margin: 0 auto;
   padding: 0 10px;
   color: $brand-color;
   text-align: center;
   @include media($md) {
     margin-bottom: 44px;
+    max-width: 520px;
   }
   @include media($lg) {
     margin-bottom: 33px;
@@ -37,7 +38,7 @@
 .reasons__info {
   @include media($md) {
     margin-bottom: 60px;
-    height: 257px;
+    height: 255px;
   }
 }
 
