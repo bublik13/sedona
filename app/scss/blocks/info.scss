@@ -7,9 +7,6 @@
 .info--triangle {
   position: relative;
   background-color: #81b3d2;
-  // @include media($md) {
-  //   height: auto;
-  // }
 }
 .info--triangle:after {
   content: " ";
@@ -34,9 +31,8 @@
   color: $second-color;
   background-color: $nav-bg;
   text-align: center;
-  flex-grow: 1;
   @include media($md) {
-    width: 66%;
+    min-width: 256px;
     padding: 30px 20px 16px 21px;
   }
   @include media($lg) {
@@ -54,7 +50,7 @@
     @include font(21px, 26px, 700);
   }
   @include media($lg) {
-    padding: 7px 13px 13px 20px;
+    padding: 7px 13px 13px 13px;
   }
 }
 .info__number {
@@ -84,14 +80,10 @@
   display: block;
   width: 100%;
   background-color: $nav-bg;
+  object-fit: cover;
   @include media($md) {
-    position: absolute;
-    width: 67%;
-    object-fit: cover;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    height: 255px;
+    width: auto;
+    max-height: 256px;
   }
   @include media($lg) {
   }
