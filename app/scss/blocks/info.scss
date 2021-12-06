@@ -26,59 +26,53 @@
   }
 }
 .info__item {
-  padding: 50px 0 25px 0;
+  padding: 54px 10px 40px 10px;
   color: $second-color;
   background-color: $nav-bg;
   text-align: center;
   flex-grow: 2;
   @include media($md) {
     min-width: 256px;
-    padding: 30px 20px 0 21px;
+    padding: 39px 20px 44px 21px;
   }
   @include media($lg) {
-    padding: 38px 55px 0 55px;
+    padding: 45px 55px 27px 55px;
   }
 }
 .info__name {
   max-width: 320px;
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   @include font(18px, 26px, 700);
   @include media($md) {
     max-width: 200px;
     @include font(21px, 26px, 700);
   }
   @include media($lg) {
-    padding: 7px 13px 13px 13px;
+    margin-bottom: 14px;
   }
 }
 .info__number {
   max-width: 320px;
   margin: 0 auto;
-  padding-bottom: 17px;
+  margin-bottom: 17px;
   @include font(14px, 21px, 400);
   @include media($md) {
-    padding-bottom: 23px;
+    margin-bottom: 23px;
   }
   @include media($lg) {
-    padding-bottom: 22px;
-    padding-left: 5px;
+    margin-bottom: 22px;
   }
 }
 .info__desc {
   max-width: 320px;
   margin: 0 auto;
-  padding-bottom: 15px;
   @include font(14px, 21px, 400);
   @include media($md) {
     max-width: 214px;
-    padding-bottom: 16px;
-    margin-bottom: 28px;
   }
   @include media($lg) {
-    max-width: 293px;
-    padding: 2px 5px 27px 7px;
+    max-width: 326px;
   }
 }
 .info__img {
@@ -86,7 +80,6 @@
   width: 100%;
   background-color: $nav-bg;
   object-fit: cover;
-  height: auto;
   @include media($md) {
     height: 100%;
   }
