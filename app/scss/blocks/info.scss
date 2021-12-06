@@ -1,7 +1,6 @@
 .info--right {
   @include media($md) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
   }
 }
 .info--triangle {
@@ -31,12 +30,13 @@
   color: $second-color;
   background-color: $nav-bg;
   text-align: center;
+  flex-grow: 2;
   @include media($md) {
     min-width: 256px;
-    padding: 30px 20px 16px 21px;
+    padding: 30px 20px 0 21px;
   }
   @include media($lg) {
-    padding: 38px 55px 27px 55px;
+    padding: 38px 55px 0 55px;
   }
 }
 .info__name {
@@ -71,9 +71,14 @@
   margin: 0 auto;
   padding-bottom: 15px;
   @include font(14px, 21px, 400);
+  @include media($md) {
+    max-width: 214px;
+    padding-bottom: 16px;
+    margin-bottom: 28px;
+  }
   @include media($lg) {
     max-width: 293px;
-    padding: 2px 5px 5px 7px;
+    padding: 2px 5px 27px 7px;
   }
 }
 .info__img {
@@ -81,9 +86,8 @@
   width: 100%;
   background-color: $nav-bg;
   object-fit: cover;
+  height: auto;
   @include media($md) {
-    width: auto;
-    max-height: 256px;
+    height: 100%;
   }
-  
 }
