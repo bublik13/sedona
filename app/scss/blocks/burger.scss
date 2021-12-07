@@ -28,21 +28,14 @@
 .burger--active .burger__line:nth-child(2) {
   background-color: transparent;
   opacity: 0;
-  background: transparent;
 }
 .burger--active .burger__line:last-child {
   transform: translateY(0) rotate(-45deg);
   background-color: $body-bg;
 }
-.burger:hover .burger__line {
+.burger:hover {
   opacity: 0.6;
 }
-.burger:focus .burger__line {
-  opacity: 0.3;
-}
-.burger--active:hover .burger__line:nth-child(odd) {
-  opacity: 0.6;
-}
-.burger--active:focus .burger__line:nth-child(odd) {
+.burger:focus {
   opacity: 0.3;
 }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="body js-body">
-     <!-- <img class="pp" src="img/desktop.jpg" alt=""> -->
+     <img class="pp" src="img/desktop.jpg" alt="">
     <style>
       .pp{
         position: absolute;
@@ -29,7 +29,7 @@
             <picture>
               <source media="(min-width: 1200px)" width="187" height="97"srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" width="102" height="84"srcset="img/logo-tablet.svg">
-              <img width="102" height="84" src="img/logo.svg" alt="logo" style="width:auto;" class="logo__img"/>
+              <img width="102" height="84" src="img/logo.svg" alt="logo" class="logo__img"/>
             </picture> 
           </a>
           <nav class="nav header__nav js-nav nav--active">
@@ -63,6 +63,36 @@
         </div>
       </div>
     </header>
+    <section class="reasons">
+      <div class="reasons__container container">
+        <div class="reasons__top">
+          <h2 class="reasons__title title-h2">
+            СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+          </h2>
+          <p class="reasons__subtitle subtitle">
+            РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!
+          </p>
+        </div>
+        <article class="info reasons__info info--right info--triangle">
+          <div class="info__item">
+            <h3 class="info__name">
+              НАСТОЯЩИЙ ГОРОДОК
+            </h3>
+            <div class="info__number">
+              — №1 —
+            </div>
+            <p class="info__desc">
+              СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+            </p>
+          </div>
+          <picture class="reasons__img">
+            <source media="(min-width: 1200px)" srcset="img/photo-city-desktop-1x.jpg, img/photo-city-desktop-2x.webp 2x">
+            <source media="(min-width: 768px)"  srcset="img/photo-city-tablet-1x.jpg, img/photo-city-tablet-2x.webp 2x">
+            <img width="520" height="260" src="img/photo-city-mobile-x2.webp" alt="photo-city" class="info__img"/>
+          </picture> 
+        </article>
+      </div>
+    </section>
     <!-- подключаем js -->
     <script>
         const body = document.querySelector('.js-body');
