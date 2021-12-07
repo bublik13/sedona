@@ -2,12 +2,13 @@
   padding: 0;
 }
 .reasons__top {
-  padding: 49px 16px 7px;
+  background-color:$body-bg;
+  padding: 49px 16px 14px;
   @include media($md) {
     padding: 45px 140px 52px;
   }
-  @include media($md) {
-    padding: 55px 340px 43px;
+  @include media($lg) {
+    padding: 55px 140px 43px;
   }
 }
 .reasons__title {
@@ -27,12 +28,6 @@
   text-align: center;
   @include media($md) {
     max-width: 520px;
-  }
-}
-.reasons__info {
-  margin-bottom: 20px;
-  @include media($md) {
-    margin-bottom: 60px;
   }
 }
 .reasons__img {
