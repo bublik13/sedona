@@ -63,17 +63,17 @@
 .header__container-center {
   position: relative;
   padding: 95px 0 79px;
-  background: url("../img/back-mobile-x2.jpg") bottom right/ cover no-repeat;
+  background: url("../img/back/back-mobile-x2.jpg") bottom right/ cover no-repeat;
   background-color: $nav-bg;
   @include media($md) {
     padding: 77px 0 90px;
     background-image: -webkit-image-set(
-      url("../img/back-desktop-x1.jpg") 1x,
-      url("../img/back-desktop-x2.webp") 2x
+      url("../img/back/back-desktop-x1.jpg") 1x,
+      url("../img/back/back-desktop-x2.webp") 2x
     );
     background-image: image-set(
-      url("../img/back-desktop-x1.jpg") 1x,
-      url("../img/back-desktop-x2.webp") 2x
+      url("../img/back/back-desktop-x1.jpg") 1x,
+      url("../img/back/back-desktop-x2.webp") 2x
     );
   }
   @include media($lg) {
