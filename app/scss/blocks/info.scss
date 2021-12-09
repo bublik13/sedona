@@ -3,6 +3,12 @@
     display: flex;
   }
 }
+.info--left {
+  @include media($md) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .info--triangle {
   position: relative;
   background-color: #81b3d2;
@@ -15,7 +21,8 @@
   position: absolute;
   width: 100%;
   height: 32px;
-  background: url(../img/triangle/intro-triangle-white.svg) center bottom/cover no-repeat;
+  background: url(../img/triangle/intro-triangle-white.svg) center bottom/cover
+    no-repeat;
   margin-top: -1px;
   @include media($sm) {
     top: 0;
@@ -26,7 +33,7 @@
   }
 }
 .info__item {
-  padding: 54px 10px 37px 10px;
+  padding: 53px 14px 40px 12px;
   color: $second-color;
   background-color: $nav-bg;
   text-align: center;
@@ -39,15 +46,25 @@
     padding: 45px 55px 27px 55px;
   }
 }
+.info__item--height {
+  padding: 39px 10px 36px 10px;
+  @include media($md) {
+    padding: 43px 33px 41px;
+  }
+  @include media($lg) {
+    padding: 51px 85px 27px;
+  }
+}
 .info__h3 {
   max-width: 320px;
   margin: 0 auto;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   @include media($md) {
-    max-width: 200px;
+    max-width: 151px;
+    margin-bottom: 13px;
   }
   @include media($lg) {
-    margin-bottom: 14px;
+    margin-bottom: 13px;
   }
 }
 .info__number {
@@ -59,7 +76,7 @@
     margin-bottom: 23px;
   }
   @include media($lg) {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 }
 .info__desc {
@@ -72,6 +89,11 @@
     max-width: 326px;
   }
 }
+.info__desc--width{
+  @include media($lg) {
+    max-width: 260px;
+  }
+}
 .info__img {
   display: block;
   width: 100%;
@@ -80,4 +102,9 @@
   @include media($md) {
     height: 100%;
   }
+}
+.inclusive__img-info {
+  width: 100%;
+  height: 256px;
+  flex-shrink: 3;
 }

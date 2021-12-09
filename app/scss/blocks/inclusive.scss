@@ -1,13 +1,14 @@
 .inclusive__container {
-  padding: 27px 16px 20px;
+  padding: 27px 0;
   background-color: $body-bg;
   @include media($md) {
-    padding: 57px 0 68px;
+    padding: 57px 0;
   }
 }
-.inclusive__info {
+.inclusive__wrap {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
+  padding: 0 16px 16px;
   @include media($xs) {
     justify-content: center;
   }
@@ -15,12 +16,15 @@
     justify-content: center;
     grid-template-rows: none;
     grid-template-columns: repeat(3, 1fr);
+    padding: 0 0 60px;
+  }
+  @include media($lg) {
+    padding-bottom: 80px;
   }
 }
 .inclusive__item {
   display: flex;
   padding: 2px 2px 0 2px;
-  //   min-height: 110px;
   @include media($md) {
     flex-direction: column;
     align-items: center;
@@ -61,7 +65,7 @@
     padding: 0px 51px 0;
   }
   @include media($lg) {
-    padding:0;
+    padding: 0;
   }
 }
 .inclusive__h3 {

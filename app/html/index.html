@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="body js-body">
-     <!-- <img class="pp" src="img/pp/mobile1.jpg" alt=""> -->
+     <!-- <img class="pp" src="img/pp/desktop.jpg" alt=""> -->
     <style>
       .pp{
         position: absolute;
@@ -88,17 +88,17 @@
           <picture class="reasons__img">
             <source media="(min-width: 1200px)" srcset="img/photo-city-desktop-1x.jpg, img/city/photo-city-desktop-2x.webp 2x">
             <source media="(min-width: 768px)"  srcset="img/photo-city-tablet-1x.jpg, img/city/photo-city-tablet-2x.webp 2x">
-            <img width="520" height="260" src="img/city/photo-city-mobile-x2.webp" alt="photo-city" class="info__img"/>
+            <img width="520" height="260" src="img/city/photo-city-mobile-2x.webp" alt="photo-city" class="info__img"/>
           </picture> 
         </article>
       </div>
     </section>
     <section class="inclusive">
       <div class="inclusive__container container">
-        <div class="inclusive__info">
+        <div class="inclusive__wrap">
           <div class="inclusive__item">
               <div  class="inclusive__icon">
-                <img src="img/house/icon-house.svg" alt="icon-house" class="inclusive__img">
+                <img width="39" height="37" src="img/house/icon-house.svg" alt="icon-house" class="inclusive__img">
               </div > 
             <div class="inclusive__text">
               <h3 class="inclusive__h3 h3">ЖИЛЬЕ</h3>
@@ -107,7 +107,7 @@
           </div>
           <div class="inclusive__item">
             <div  class="inclusive__icon" >
-              <img src="img/gift/icon-gift.svg" alt="icon-gift" class="inclusive__img">
+              <img width="32" height="38" src="img/gift/icon-gift.svg" alt="icon-gift" class="inclusive__img">
             </div > 
             <div class="inclusive__text">
               <h3 class="inclusive__h3 h3">СУВЕНИРЫ</h3>
@@ -116,7 +116,7 @@
           </div>
           <div class="inclusive__item">
             <div  class="inclusive__icon" >
-              <img src="img/burger/icon-burger.svg" alt="icon-burger" class="inclusive__img">
+              <img width="40" height="35" src="img/burger/icon-burger.svg" alt="icon-burger" class="inclusive__img">
             </div > 
             <div class="inclusive__text">
               <h3 class="inclusive__h3 h3">ЕДА</h3>
@@ -124,8 +124,27 @@
             </div>
           </div>
         </div>
+        <article class="info inclusive__info info--left">
+          <div class="info__item info__item--height">
+            <h3 class="info__h3 h3">
+              ТАМ ЕСТЬ МОСТ ДЬЯВОЛА
+            </h3>
+            <div class="info__number">
+              — №2 —
+            </div>
+            <p class="info__desc desc info__desc--width">
+              ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО
+            </p>
+          </div>
+          <picture class="inclusive__img-info">
+            <source media="(min-width: 1200px)" srcset="img/bridge/photo-bridge-desktop-1x.jpg, img/bridge/photo-bridge-desktop-2x.webp 2x">
+            <source media="(min-width: 768px)"  srcset="img/bridge/photo-bridge-tablet-1x.jpg, img/bridge/photo-bridge-tablet-2x.webp 2x">
+            <img width="520" height="260" src="img/bridge/photo-bridge-mobile-2x.webp" alt="photo-bridge" class="info__img"/>
+          </picture> 
+        </article>
       </div>
     </section>
+  
     <!-- подключаем js -->
     <script>
         const body = document.querySelector('.js-body');
