@@ -37,21 +37,23 @@
   color: $second-color;
   background-color: $nav-bg;
   text-align: center;
-  flex-grow: 2;
   @include media($md) {
-    min-width: 256px;
+    width: 37%;
     padding: 39px 20px 44px 21px;
   }
   @include media($lg) {
-    padding: 45px 55px 27px 55px;
+    width: 36%;
+    padding: 45px 67px 27px;
   }
 }
 .info__item--height {
   padding: 39px 10px 36px 10px;
   @include media($md) {
+    width: 46%;
     padding: 43px 33px 41px;
   }
   @include media($lg) {
+    width: 43%;
     padding: 51px 85px 27px;
   }
 }
@@ -103,8 +105,4 @@
     height: 100%;
   }
 }
-.inclusive__img-info {
-  width: 100%;
-  height: 256px;
-  flex-shrink: 3;
-}
+
