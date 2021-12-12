@@ -1,0 +1,13 @@
+.definition__container {
+  background-color: $body-bg-pink;
+  @include media($md) {
+    padding: 3px 0 19px;
+  }
+  @include media($lg) {
+    padding: 0 0 32px;
+  }
+}
+.definition__info {
+  color: $brand-color;
+  background-color: $body-bg-pink;
+}

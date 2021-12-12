@@ -11,7 +11,6 @@
 }
 .info--triangle {
   position: relative;
-  background-color: #81b3d2;
 }
 .info--triangle:after {
   content: " ";
@@ -34,15 +33,12 @@
 }
 .info__item {
   padding: 53px 14px 40px 12px;
-  color: $second-color;
-  background-color: $nav-bg;
   text-align: center;
   @include media($md) {
-    width: 37%;
+    width: 33%;
     padding: 39px 20px 44px 21px;
   }
   @include media($lg) {
-    width: 36%;
     padding: 45px 67px 27px;
   }
 }
@@ -55,6 +51,12 @@
   @include media($lg) {
     width: 43%;
     padding: 51px 85px 27px;
+  }
+}
+.info__item:not(:last-child) {
+  border-bottom: 1px solid $border-color;
+  @include media($md) {
+    border-bottom: 0 ;
   }
 }
 .info__h3 {
@@ -91,7 +93,7 @@
     max-width: 326px;
   }
 }
-.info__desc--width{
+.info__desc--width {
   @include media($lg) {
     max-width: 260px;
   }
@@ -105,4 +107,3 @@
     height: 100%;
   }
 }
-

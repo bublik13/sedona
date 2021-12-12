@@ -1,8 +1,8 @@
 .inclusive__container {
-  padding: 27px 0;
+  padding: 27px 0 0 0;
   background-color: $body-bg;
   @include media($md) {
-    padding: 57px 0;
+    padding: 57px 0 0;
   }
 }
 .inclusive__wrap {
@@ -79,6 +79,10 @@
   @include media($lg) {
     max-width: 305px;
   }
+}
+.inclusive__info{
+  color: $second-color;
+  background-color: $nav-bg;
 }
 .inclusive__img-info {
   width: 100%;
