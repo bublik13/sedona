@@ -1,6 +1,6 @@
 .header__top {
   background-color: $body-bg;
-  padding-bottom: 66px;
+  padding-bottom: 97px;
   @include media($md) {
     padding-top: 0;
     padding-bottom: 10px;
@@ -62,18 +62,18 @@
 }
 .header__container-center {
   position: relative;
-  padding: 98px 0 76px;
-  background: url("../img/back-mobile-x2.jpg") bottom right/ cover no-repeat;
+  padding: 95px 0 79px;
+  background: url("../img/header/back-mobile-2x.jpg") bottom right/ cover no-repeat;
   background-color: $nav-bg;
   @include media($md) {
     padding: 77px 0 90px;
     background-image: -webkit-image-set(
-      url("../img/back-desktop-x1.jpg") 1x,
-      url("../img/back-desktop-x2.webp") 2x
+      url("../img/header/back-desktop-1x.jpg") 1x,
+      url("../img/header/back-desktop-2x.webp") 2x
     );
     background-image: image-set(
-      url("../img/back-desktop-x1.jpg") 1x,
-      url("../img/back-desktop-x2.webp") 2x
+      url("../img/header/back-desktop-1x.jpg") 1x,
+      url("../img/header/back-desktop-2x.webp") 2x
     );
   }
   @include media($lg) {
@@ -88,7 +88,7 @@
   position: absolute;
   height: 57px;
   width: 100%;
-  background: url(../img/intro-triangle.svg) center center/ cover no-repeat;
+  background: url(../img/header/intro-triangle.svg) center center/ cover no-repeat;
   margin-bottom: -1px;
   
 }

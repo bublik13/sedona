@@ -1,3 +1,10 @@
-// .logo{
-//     z-index: 3;
-// }
+.logo__img {
+  @include media($md) {
+    width: 102px;
+    height: 84px;
+  }
+  @include media($lg) {
+    width: 187px;
+    height: 97px;
+  }
+}

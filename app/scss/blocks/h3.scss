@@ -1,0 +1,6 @@
+.h3 {
+  @include font(18px, 26px, 700);
+  @include media($md) {
+    @include font(21px, 26px, 700);
+  }
+}
