@@ -1,0 +1,13 @@
+.button {
+    padding: 15px 47px 18px;
+    background-color: $nav-bg;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: $second-color;
+    border: none;
+    @include font(21px, 26px, 700);
+    @include media($md) {
+      padding: 15px 136px 18px;
+    }
+  }

@@ -1,0 +1,35 @@
+.search__container {
+  padding: 33px 16px 48px;
+  @include media($md) {
+    padding: 57px 16px 58px;
+  }
+  @include media($lg) {
+    padding-bottom: 65px;
+  }
+}
+.search__top {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search__title {
+  margin-bottom: 21px;
+  @include media($md) {
+    margin-bottom: 32px;
+  }
+  @include media($lg) {
+    margin-bottom: 32px;
+  }
+}
+.search__subtitle {
+  margin-bottom: 24px;
+  max-width: 263px;
+  @include media($md) {
+    margin-bottom: 35px;
+    max-width: 400px;
+  }
+  @include media($lg) {
+    margin-bottom: 40px;
+  }
+}
