@@ -1,0 +1,6 @@
+.definition__container {
+  background-color: $body-bg-pink;
+  @include media($md) {
+    padding: 14px 0;
+  }
+}
