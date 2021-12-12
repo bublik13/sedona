@@ -35,11 +35,10 @@
   padding: 53px 14px 40px 12px;
   text-align: center;
   @include media($md) {
-    width: 37%;
+    width: 33%;
     padding: 39px 20px 44px 21px;
   }
   @include media($lg) {
-    width: 36%;
     padding: 45px 67px 27px;
   }
 }
