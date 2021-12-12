@@ -11,7 +11,6 @@
 }
 .info--triangle {
   position: relative;
-  background-color: #81b3d2;
 }
 .info--triangle:after {
   content: " ";
@@ -34,8 +33,6 @@
 }
 .info__item {
   padding: 53px 14px 40px 12px;
-  color: $second-color;
-  background-color: $nav-bg;
   text-align: center;
   @include media($md) {
     width: 37%;
@@ -57,11 +54,7 @@
     padding: 51px 85px 27px;
   }
 }
-.info__item--color {
-  color: $brand-color;
-  background-color: $body-bg-pink;
-}
-.info__item--color:not(:last-child) {
+.info__item:not(:last-child) {
   border-bottom: 1px solid $border-color;
   @include media($md) {
     border-bottom: 0 ;
