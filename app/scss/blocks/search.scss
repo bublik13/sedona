@@ -1,7 +1,7 @@
 .search__container {
   padding: 33px 16px 48px;
   @include media($md) {
-    padding: 57px 168px 58px;
+    padding: 57px 68px 58px;
   }
   @include media($lg) {
     padding-bottom: 65px;
@@ -36,7 +36,7 @@
     margin-bottom: 40px;
   }
 }
-.search__link {
+.search__button {
   padding: 15px 47px 18px;
   background-color: $nav-bg;
   color: $second-color;
