@@ -36,10 +36,4 @@
     margin-bottom: 40px;
   }
 }
-.search__button {
-  padding: 15px 47px 18px;
-  background-color: $nav-bg;
-  @include media($md) {
-    padding: 15px 136px 18px;
-  }
-}
+

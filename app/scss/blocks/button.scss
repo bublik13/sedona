@@ -5,6 +5,7 @@
   border: none;
   transition: ease-out 0.2s;
   color: $second-color;
+  background-color: $nav-bg;
   &:hover {
     background-color: $body-bg-hover;
   }
@@ -21,4 +22,11 @@
     opacity: 1;
   }
   @include font(21px, 26px, 700);
+}
+.button--width{
+  padding: 15px 10px 18px;
+  width: 280px;
+  @include media($md) {
+    width: 458px;
+  }
 }
