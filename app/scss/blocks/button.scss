@@ -3,4 +3,22 @@
   display: inline-block;
   vertical-align: top;
   border: none;
+  transition: ease-out 0.2s;
+  color: $second-color;
+  &:hover {
+    background-color: $body-bg-hover;
+  }
+  &:focus {
+    background-color: $body-bg-focus;
+    color: $transparent-color;
+  }
+  &._disabled {
+    background: $disabled;
+    pointer-events: none;
+  }
+  &:active,
+  &._active {
+    opacity: 1;
+  }
+  @include font(21px, 26px, 700);
 }

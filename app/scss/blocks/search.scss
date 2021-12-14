@@ -39,24 +39,6 @@
 .search__button {
   padding: 15px 47px 18px;
   background-color: $nav-bg;
-  color: $second-color;
-  &:hover {
-    background-color: $body-bg-hover;
-  }
-  &:focus {
-    background-color: $body-bg-focus;
-    color: $transparent-color;
-  }
-  &[disabled],
-  &._disabled {
-    background: #ccc;
-    pointer-events: none;
-  }
-  &:active,
-  &._active {
-    opacity: 1;
-  }
-  @include font(21px, 26px, 700);
   @include media($md) {
     padding: 15px 136px 18px;
   }
