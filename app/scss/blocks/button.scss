@@ -1,0 +1,35 @@
+.button {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  transition: ease-out 0.2s;
+  color: $second-color;
+  background-color: $nav-bg;
+  &:hover {
+    background-color: $body-bg-hover;
+  }
+  &:focus {
+    background-color: $body-bg-focus;
+    color: $transparent-color;
+  }
+  &._disabled {
+    background: $disabled;
+    pointer-events: none;
+  }
+  &:active,
+  &._active {
+    opacity: 1;
+  }
+  @include font(21px, 26px, 700);
+}
+.button--width {
+  min-height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  @include media($md) {
+    width: 458px;
+  }
+}
