@@ -1,0 +1,23 @@
+.map__container {
+  padding: 0;
+}
+.map__wrap:before {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background-color: $body-bg;
+  border-radius: 50%;
+  top:0;
+}
+.map__wrap {
+  position: relative;
+}
+.map__img {
+  display: block;
+  width: 100%;
+  background-color: $nav-bg;
+  object-fit: cover;
+  @include media($md) {
+    height: 100%;
+  }
+}
