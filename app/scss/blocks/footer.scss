@@ -1,0 +1,74 @@
+.footer__container {
+  padding-top: 39px;
+  padding-bottom: 23px;
+  background-color: $body-bg;
+  @include media($md) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    height: 50px;
+    grid-gap: 37px;
+    padding-left: 17px;
+    padding-right: 13px;
+  }
+  @include media($lg) {
+    grid-gap: 110px;
+    padding: 36px 33px 36px 37px;
+  }
+}
+.footer__title {
+  margin-bottom: 34px;
+  text-align: center;
+  @include font(21px, 26px, 700);
+}
+.footer__socials {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+.footer__wrap {
+  width: 47px;
+  height: 48px;
+  background-color: $nav-bg;
+  margin-right: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  &:hover {
+    background-color: $body-bg-hover;
+  }
+}
+
+.footer__social {
+  display: block;
+  &:focus {
+    background: url(../img/footer/twitter-opacity.svg) center center/ cover
+      no-repeat;
+  }
+}
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  @include media($md) {
+    min-height: 69px;
+  }
+}
+.footer__desc {
+  margin-right: 15px;
+  @include font(14px, 26px, 400);
+  @include media($md) {
+    margin-right: 12px;
+    margin-top: 3px;
+  }
+  @include media($lg) {
+    margin-right: 13px;
+    margin-top: 3px;
+  }
+}
+.footer__img {
+}
