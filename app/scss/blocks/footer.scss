@@ -5,28 +5,39 @@
   @include media($md) {
     padding-top: 36px;
     padding-bottom: 36px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    height: 50px;
-    grid-gap: 37px;
     padding-left: 17px;
     padding-right: 13px;
   }
   @include media($lg) {
-    grid-gap: 110px;
     padding: 36px 33px 36px 37px;
+  }
+}
+.footer__info {
+  @include media($md) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-gap: 37px;
+  }
+  @include media($lg) {
+    grid-gap: 110px;
   }
 }
 .footer__title {
   margin-bottom: 34px;
   text-align: center;
   @include font(21px, 26px, 700);
+  @include media($md) {
+    margin-bottom: 0;
+  }
 }
 .footer__socials {
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
+  @include media($md) {
+    margin-bottom: 0;
+  }
 }
 .footer__wrap {
   width: 47px;
@@ -38,25 +49,35 @@
   align-items: center;
   cursor: pointer;
   border: none;
-  transition: 0.2s;
+  // transition: 0.2s;
+  position: relative;
   &:hover {
     background-color: $body-bg-hover;
   }
 }
-
+.footer__wrap:focus .footer__social {
+  opacity: 0;
+}
+.footer__wrap:focus:before {
+  content: " ";
+  width: 15px;
+  height: 18px;
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  right: 0;
+  left: 18px;
+  background-color: $body-bg-focus;
+  background: url("../img/footer/twitter-opacity.svg") 50% 50% no-repeat;
+}
 .footer__social {
   display: block;
-  &:focus {
-    background: url(../img/footer/twitter-opacity.svg) center center/ cover
-      no-repeat;
-  }
+  transition:  all .3s ease;
 }
+
 .footer__bottom {
   display: flex;
   justify-content: center;
-  @include media($md) {
-    min-height: 69px;
-  }
 }
 .footer__desc {
   margin-right: 15px;
@@ -70,5 +91,20 @@
     margin-top: 3px;
   }
 }
+.footer__logo {
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
 .footer__img {
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  &:hover {
+    background: url(../img/footer/htmlacademy-hover.png) 50% 50% no-repeat;
+  }
+  &:focus {
+    background: $body-bg-focus;
+    background: url(../img/footer/htmlacademy-down.png) 50% 50% no-repeat;
+  }
 }
