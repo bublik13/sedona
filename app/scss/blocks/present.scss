@@ -1,0 +1,21 @@
+.present__title {
+  margin: 0 auto;
+  @include font(19px, 26px, 700);
+  margin-bottom: 19px;
+}
+.present__label {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.present__label:not(:last-child) {
+  margin-bottom: 20px;
+}
+.present__subtitle {
+  color: $name-color;
+  margin-right: 15px;
+}
+.present__input {
+  width: 90%;
+  padding: 18px 22px 14px;
+}

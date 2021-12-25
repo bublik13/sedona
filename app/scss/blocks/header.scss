@@ -80,6 +80,9 @@
     padding: 80px 0 87px;
   }
 }
+.header__container-width{
+  padding: 52px 0 60px;
+}
 .header__container-center:after {
   content: " ";
   left: 0;
@@ -90,7 +93,6 @@
   width: 100%;
   background: url(../img/header/intro-triangle.svg) center center/ cover no-repeat;
   margin-bottom: -1px;
-  
 }
 .header__back {
   display: flex;

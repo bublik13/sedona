@@ -45,7 +45,6 @@
   width: 47px;
   height: 48px;
   background-color: $nav-bg;
-  margin-right: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,13 +52,17 @@
   border: none;
   position: relative;
   color: #fff;
+  transition: 0.2s;
   &:hover {
     background-color: $body-bg-hover;
   }
   &:active{
-    background-color: #5496BD;
+    background-color: $body-bg-focus;
     color: rgba(255, 255, 255, .3);
   }
+}
+.social__item:not(:last-child){
+  margin-right: 6px;
 }
 .footer__social {
   display: block;
@@ -86,16 +89,20 @@
   cursor: pointer;
   border: none;
   transition: 0.2s;
+  color: $brand-color;
+  &:hover {
+    color:$nav-bg;
+  }
+  &:active {
+    color: $brand-color;
+    opacity: 0.3;
+  }
 }
 .footer__img {
   cursor: pointer;
   border: none;
   transition: 0.2s;
-  &:hover {
-    background: url(../img/footer/htmlacademy-hover.png) 50% 50% no-repeat;
-  }
-  &:focus {
-    background: $body-bg-focus;
-    background: url(../img/footer/htmlacademy-down.png) 50% 50% no-repeat;
-  }
+  display: block;
+  width: 27px;
+  height: 34px;
 }

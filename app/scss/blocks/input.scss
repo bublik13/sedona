@@ -1,0 +1,21 @@
+.input {
+  background-color: $body-bg-input;
+  border: none;
+  @include font(18px, 26px, 700);
+  color: $brand-color;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background-color: $disabled;
+  }
+  &:focus {
+    background-color: $body-bg;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
+}
+.input::placeholder{
+    @include font(18px, 26px, 700);
+    color: $brand-color;
+    opacity: 1;
+}

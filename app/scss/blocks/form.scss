@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: none;
+}
+.form__container {
+  padding: 0;
+}
+.form__wrap {
+  position: relative;
+  padding: 20px 20px 25px;
+  border-top: 1px solid $disabled;
+  border-bottom: 1px solid $disabled;
+}
+.form__present {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: none;
+}
