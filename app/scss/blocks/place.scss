@@ -1,0 +1,67 @@
+.place {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: none;
+}
+.place__title {
+  margin: 0 auto;
+  @include font(19px, 26px, 700);
+  margin-bottom: 25px;
+}
+.place__label:not(:last-child) {
+  margin-bottom: 21px;
+}
+.place__checkbox {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.place__pseudo {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  display: block;
+  background-color: $body-bg-input;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background-color: $disabled;
+  }
+}
+.place__pseudo:after {
+  content: " ";
+  width: 24px;
+  height: 17px;
+  background: url(../img/form/tick.svg);
+  display: none;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s, transform 0.2s ease;
+}
+.place__subtitle {
+  @include font(18px, 26px, 700);
+  color: $brand-color;
+}
+.place__checkbox:checked ~ .place__pseudo:after {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+.place__checkbox:focus ~ .place__pseudo:after {
+  opacity: 0.3;
+}
+.place--inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 29px;
+}
+.place__checkbox:focus ~ .place__pseudo {
+  background-color: $body-bg-radio;
+}
