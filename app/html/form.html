@@ -56,16 +56,16 @@
          <nav class="nav header__nav js-nav nav--active">
            <ul class="nav__list nav__list--column">
              <li class="nav__item">
-               <a href="#" class="nav__link nav__link--active">ГЛАВНАЯ</a>
+               <a href="form.html" class="nav__link nav__link--active">ГЛАВНАЯ</a>
              </li>
              <li class="nav__item">
-               <a href="#" class="nav__link nav__link--active">ФОТО И ВИДЕО</a>
+               <a href="form.html" class="nav__link nav__link--active">ФОТО И ВИДЕО</a>
              </li>
              <li class="nav__item">
-               <a href="form.htmlg" class="nav__link nav__link--active">ФОРМА ОТЗЫВА</a>
+               <a href="form.html" class="nav__link nav__link--active">ФОРМА ОТЗЫВА</a>
              </li>
              <li class="nav__item">
-               <a href="#" class="nav__link nav__link--active">HTML ACADEMY</a>
+               <a href="form.html" class="nav__link nav__link--active">HTML ACADEMY</a>
              </li>
            </ul>
          </nav>
@@ -98,60 +98,72 @@
   </section>
   <section class="form">
     <div class="form__container container">
-        <form action="index.php">
-            <div class="form__wrap">
-                <fieldset class="form__present present">
-                    <legend class="present__title">ПРЕДСТАВТЕСЬ:</legend>
-                    <label class="present__label">
-                        <span class="present__subtitle subtitle"> ИМЯ*:</span>
-                        <input placeholder="Петр" type="text" class="present__input input">
-                    </label>
-                    <label class="present__label">
-                        <span class="present__subtitle subtitle"> ФАМИЛИЯ*:</span>
-                        <input placeholder="Иванов" type="text" class="present__input input">
-                    </label>
-                    <label class="present__label">
-                        <span class="present__subtitle subtitle"> ОТЧЕСТВО:</span>
-                        <input placeholder="Александрович" type="text" class="present__input input">
-                    </label>
-                </fieldset>
-            </div>
-            <div class="form__wrap">
-                <fieldset class="form__contact contact">
-                    <legend class="contact__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
-                    <label class="contact__label">
-                        <span class="contact__subtitle subtitle"> КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
-                        <div class="contact__button"> 
-                            <input placeholder="Введите телефон" type="tel" class="contact__input input">
-                            <a class="contact__link" href="#">
-                                <svg class="contact__icon">
-                                  <use xlink:href="#phone"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </label>
-                    <label class="contact__label">
-                        <span class="contact__subtitle subtitle"> ЭЛЕКТРОННАЯ ПОЧТА*:</span>
-                        <div class="contact__button"> 
-                            <input placeholder="Введите e-mail" type="email" class="contact__input input">
-                            <a class="contact__link" href="#">
-                                <svg class="contact__icon">
-                                <use xlink:href="#email"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </label>
-                </fieldset>
-            </div>
-        </form>
-      <!-- <div class="reasons__top">
-        <h2 class="reasons__title h2">
-          ОСТАТЬЕ СВОЙ ОТЗЫВ
-        </h2>
-        <p class="reasons__subtitle subtitle">
-          ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВТЬЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ
-        </p>
-      </div> -->
+      <form action="index.php">
+        <div class="form__wrap">
+          <fieldset class="form__present present">
+            <legend class="present__title">ПРЕДСТАВТЕСЬ:</legend>
+            <label class="present__label">
+              <span class="present__subtitle subtitle"> ИМЯ*:</span>
+              <input placeholder="Петр" type="text" class="present__input input">
+            </label>
+            <label class="present__label">
+              <span class="present__subtitle subtitle"> ФАМИЛИЯ*:</span>
+              <input placeholder="Иванов" type="text" class="present__input input">
+            </label>
+            <label class="present__label">
+              <span class="present__subtitle subtitle"> ОТЧЕСТВО:</span>
+              <input placeholder="Александрович" type="text" class="present__input input">
+            </label>
+          </fieldset>
+        </div>
+        <div class="form__wrap">
+          <fieldset class="form__contact contact">
+            <legend class="contact__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
+            <label class="contact__label">
+              <span class="contact__subtitle subtitle"> КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
+              <div class="contact__button"> 
+                <input placeholder="Введите телефон" type="tel" class="contact__input input">
+                <a class="contact__link" href="#">
+                  <svg class="contact__icon">
+                    <use xlink:href="#phone"/>
+                  </svg>
+                </a>
+              </div>
+            </label>
+            <label class="contact__label">
+              <span class="contact__subtitle subtitle"> ЭЛЕКТРОННАЯ ПОЧТА*:</span>
+              <div class="contact__button"> 
+                <input placeholder="Введите e-mail" type="email" class="contact__input input">
+                <a class="contact__link" href="#">
+                  <svg class="contact__icon">
+                    <use xlink:href="#email"/>
+                  </svg>
+                </a>
+              </div>
+           </label>
+          </fieldset>
+        </div>
+        <div class="form__wrap">
+          <fieldset class="form__opinion opinion">
+            <legend class="opinion__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
+            <label class="opinion__label opinion--inline">
+              <input name="opinion" type="radio" class="opinion__radio">
+              <span class="opinion__pseudo"></span>
+              <span class="opinion__subtitle">Скорее положительное</span>
+            </label>
+            <label class="opinion__label opinion--inline">
+              <input name="opinion" type="radio" class="opinion__radio">
+              <span class="opinion__pseudo"></span>
+              <span class="opinion__subtitle">Скорее отрицательное</span>
+            </label>
+            <label class="opinion__label opinion--inline">
+              <input name="opinion" type="radio" class="opinion__radio">
+              <span class="opinion__pseudo"></span>
+              <span class="opinion__subtitle">Затрудняюсь ответить</span>
+            </label>
+          </fieldset>
+        </div>
+      </form>
     </div>
   </section>
   

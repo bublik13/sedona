@@ -14,8 +14,8 @@
     outline-offset: -4px;
   }
 }
-.input::placeholder{
-    @include font(18px, 26px, 700);
-    color: $brand-color;
-    opacity: 1;
+.input::placeholder {
+  @include font(18px, 26px, 700);
+  color: $brand-color;
+  opacity: 1;
 }

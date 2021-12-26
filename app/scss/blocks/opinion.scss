@@ -1,0 +1,68 @@
+.opinion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: none;
+}
+.opinion__title {
+  margin: 0 auto;
+  @include font(19px, 26px, 700);
+  margin-bottom: 25px;
+}
+.opinion__label:not(:last-child) {
+  margin-bottom: 21px;
+}
+.opinion__radio {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.opinion__pseudo {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: block;
+  background-color: $body-bg-input;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background-color: $disabled;
+  }
+}
+.opinion__pseudo:after {
+  content: " ";
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background-color: $name-color;
+  display: none;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s, transform 0.2s ease;
+}
+.opinion__subtitle {
+  @include font(18px, 26px, 700);
+  color: $brand-color;
+}
+.opinion__radio:checked ~ .opinion__pseudo:after {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+.opinion__radio:focus ~ .opinion__pseudo:after {
+  opacity: 0.3;
+}
+.opinion--inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 26px;
+}
+.opinion__radio:focus ~ .opinion__pseudo {
+  background-color: $body-bg-radio;
+}
