@@ -32,7 +32,7 @@
     </svg>
 </head>
 <body class="body js-body">
-    <!-- <img class="pp" src="img/form/mobile.jpg" alt=""> -->
+    <!-- <img class="pp" src="img/form/mobile1.jpg" alt=""> -->
    <style>
      .pp{
        position: absolute;
@@ -45,7 +45,7 @@
      }
    </style>
    <header class="header">
-     <div class="header__top">
+     <div class="header__top header__top--height">
        <div class="header__container container">
          <a href="#" class="header__logo logo">
            <picture>
@@ -87,7 +87,7 @@
    </header>
    <section class="reasons">
     <div class="reasons__container container">
-      <div class="reasons__top">
+      <div class="reasons__top reasons__top--height">
         <h2 class="reasons__title h2">
           ОСТАТЬЕ СВОЙ ОТЗЫВ
         </h2>
@@ -101,53 +101,53 @@
     <div class="form__container container">
       <form action="index.php">
         <div class="form__wrap">
-          <fieldset class="form__present present">
-            <legend class="present__title">ПРЕДСТАВТЕСЬ:</legend>
-            <label class="present__label">
-              <span class="present__subtitle subtitle"> ИМЯ*:</span>
-              <input placeholder="Петр" type="text" class="present__input input">
+          <fieldset class="form__column">
+            <legend class="form__title title title--mg-sm">ПРЕДСТАВТЕСЬ:</legend>
+            <label class="form__label">
+              <span class="form__name name"> ИМЯ*:</span>
+              <input placeholder="Петр" type="text" class="form__input input">
             </label>
-            <label class="present__label">
-              <span class="present__subtitle subtitle"> ФАМИЛИЯ*:</span>
-              <input placeholder="Иванов" type="text" class="present__input input">
+            <label class="form__label">
+              <span class="form__name name"> ФАМИЛИЯ*:</span>
+              <input placeholder="Иванов" type="text" class="form__input input">
             </label>
-            <label class="present__label">
-              <span class="present__subtitle subtitle"> ОТЧЕСТВО:</span>
-              <input placeholder="Александрович" type="text" class="present__input input">
+            <label class="form__label">
+              <span class="form__name name"> ОТЧЕСТВО:</span>
+              <input placeholder="Александрович" type="text" class="form__input input">
             </label>
           </fieldset>
         </div>
         <div class="form__wrap">
-          <fieldset class="form__contact contact">
-            <legend class="contact__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
-            <label class="contact__label">
-              <span class="contact__subtitle subtitle"> КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
-              <div class="contact__button"> 
-                <input placeholder="Введите телефон" type="tel" class="contact__input input">
-                <a class="contact__link" href="#">
-                  <svg class="contact__icon">
+          <fieldset class="form__column">
+            <legend class="form__title title title--mg-xs">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
+            <label class="form__label form__label--column">
+              <span class="form__name name"> КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
+              <div class="form__box form__box--inline"> 
+                <input placeholder="Введите телефон" type="tel" class="form__input input">
+                <div class="form__element element">
+                  <svg class="element__icon">
                     <use xlink:href="#phone"/>
                   </svg>
-                </a>
+                </div>
               </div>
             </label>
-            <label class="contact__label">
-              <span class="contact__subtitle subtitle"> ЭЛЕКТРОННАЯ ПОЧТА*:</span>
-              <div class="contact__button"> 
-                <input placeholder="Введите e-mail" type="email" class="contact__input input">
-                <a class="contact__link" href="#">
-                  <svg class="contact__icon">
+            <label class="form__label form__label--column">
+              <span class="form__name name"> ЭЛЕКТРОННАЯ ПОЧТА*:</span>
+              <div class="form__box form__box--inline"> 
+                <input placeholder="Введите e-mail" type="email" class="form__input input">
+                <div class="form__element element">
+                  <svg class="element__icon">
                     <use xlink:href="#email"/>
                   </svg>
-                </a>
+                </div>
               </div>
            </label>
           </fieldset>
         </div>
         <div class="form__wrap">
-          <fieldset class="form__opinion opinion">
-            <legend class="opinion__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
-            <label class="opinion__label opinion--inline">
+          <fieldset class="form__column">
+            <legend class="form__title title title--mg-md">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
+            <label class="form__label form--inline">
               <input name="opinion" type="radio" class="opinion__radio">
               <span class="opinion__pseudo"></span>
               <span class="opinion__subtitle">Скорее положительное</span>
@@ -165,7 +165,7 @@
           </fieldset>
         </div>
         <div class="form__wrap">
-          <fieldset class="form__place place">
+          <fieldset class="form__place place form">
             <legend class="place__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
             <label class="place__label place--inline">
               <input type="checkbox" class="place__checkbox">
@@ -190,7 +190,7 @@
           </fieldset>
         </div>
         <div class="form__wrap">
-          <fieldset class="form__emotions emotions">
+          <fieldset class="form__emotions emotions form">
             <legend class="emotions__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
             <textarea class="emotions__textarea"placeholder="Опишите подробно все свои восторги"></textarea>
             <a class="emotions__button _disabled button button--width" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
@@ -202,6 +202,11 @@
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__info">
+        <!-- <p> перед скриптом</p>
+        <script>
+          alert('Привет Стасик!');
+        </script>
+        <p> после скрипта</p> -->
           <div class="footer__title">
             #VISITSEDONA
           </div>

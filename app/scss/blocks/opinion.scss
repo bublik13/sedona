@@ -1,14 +1,4 @@
-.opinion {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  border: none;
-}
-.opinion__title {
-  margin: 0 auto;
-  @include font(19px, 26px, 700);
-  margin-bottom: 25px;
-}
+
 .opinion__label:not(:last-child) {
   margin-bottom: 21px;
 }
