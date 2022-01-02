@@ -11,6 +11,8 @@
   flex-direction: column;
   text-align: center;
   border: none;
+  max-width: 320px;
+  margin: 0 auto;
 }
 .form__label {
   display: flex;
@@ -23,25 +25,38 @@
   display: flex;
   flex-direction: column;
 }
-.form__label--column>.form__name {
+.form__label--column > .form__name {
   margin-left: 17px;
 }
 .form__name {
   margin-top: 5px;
   margin-right: 15px;
 }
-.form__box{
+.form__box {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.form__box--inline{
+.form__box--inline {
   display: flex;
 }
 .form--inline {
   display: inline-flex;
   align-items: center;
   gap: 26px;
+  justify-content: flex-start;
 }
 .form--inline:not(:last-child) {
   margin-bottom: 21px;
+}
+.form__text {
+  @include font(18px, 26px, 700);
+  color: $brand-color;
+}
+.form__textarea {
+  max-width: 320px;
+  display: flex;
+  margin: 0 auto;
+}
+.form__button {
+  margin: 0 auto;
 }

@@ -1,11 +1,11 @@
 .title {
   margin: 0 auto;
   @include font(19px, 26px, 700);
+  text-align: center;
 }
-//   $xs: 350px;
-// $sm: 556px;
-// $md: 768px;
-// $lg: 1200px;
+.title--mg-x {
+  margin-bottom: 15px;
+}
 .title--mg-xs {
   margin-bottom: 17px;
 }

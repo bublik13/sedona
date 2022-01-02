@@ -41,7 +41,7 @@
     margin-bottom: 0;
   }
 }
-.social__link{
+.social__link {
   width: 47px;
   height: 48px;
   background-color: $nav-bg;
@@ -56,12 +56,12 @@
   &:hover {
     background-color: $body-bg-hover;
   }
-  &:active{
+  &:active {
     background-color: $body-bg-focus;
-    color: rgba(255, 255, 255, .3);
+    color: rgba(255, 255, 255, 0.3);
   }
 }
-.social__item:not(:last-child){
+.social__item:not(:last-child) {
   margin-right: 6px;
 }
 .footer__social {
@@ -91,7 +91,7 @@
   transition: 0.2s;
   color: $brand-color;
   &:hover {
-    color:$nav-bg;
+    color: $nav-bg;
   }
   &:active {
     color: $brand-color;

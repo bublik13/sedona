@@ -1,0 +1,68 @@
+.check {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.check__pseudo,
+.check__pseudo-img {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: block;
+  background-color: $body-bg-input;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  &:hover {
+    background-color: $disabled;
+  }
+}
+.check--radius {
+  border-radius: 50%;
+}
+.check__pseudo:after {
+  content: " ";
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background-color: $name-color;
+
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s, transform 0.2s ease;
+}
+.check__pseudo-img:after {
+  content: " ";
+  width: 24px;
+  height: 17px;
+  background: url(../img/form/tick.svg);
+
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s, transform 0.2s ease;
+}
+.check:checked ~ .check__pseudo:after {
+  opacity: 1;
+  transform: scale(1);
+}
+.check:focus ~ .check__pseudo:after {
+  opacity: 0.3;
+}
+.check:focus ~ .check__pseudo {
+  background-color: $body-bg-radio;
+}
+
+.check:checked ~ .check__pseudo-img:after {
+  opacity: 1;
+  transform: scale(1);
+}
+.check:focus ~ .check__pseudo-img:after {
+  opacity: 0.3;
+}
+.check:focus ~ .check__pseudo-img {
+  background-color: $body-bg-radio;
+}
