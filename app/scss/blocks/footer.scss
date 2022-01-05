@@ -12,6 +12,9 @@
     padding: 36px 33px 36px 37px;
   }
 }
+.footer__container--pd{
+  padding-top: 49px;
+}
 .footer__info {
   @include media($md) {
     display: grid;
@@ -72,6 +75,7 @@
 .footer__bottom {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .footer__desc {
   margin-right: 15px;
