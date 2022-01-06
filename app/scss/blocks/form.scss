@@ -1,16 +1,38 @@
 .form__container {
   padding: 0;
 }
+.form__list {
+  display: flex;
+  flex-direction: column;
+}
+.form__inline {
+  @include media($md) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 .form__wrap {
   position: relative;
 }
 .form__column {
   display: flex;
   flex-direction: column;
-  text-align: center;
   border: none;
   max-width: 320px;
   margin: 0 auto;
+  @include media($md) {
+    max-width: 648px;
+  }
+}
+.form__label-wrap{
+  @include media($md) {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: 0 auto;
+  }
 }
 .form__label {
   display: flex;
@@ -34,8 +56,10 @@
 .form__label--inline-check {
   display: inline-flex;
   align-items: center;
-  // gap: 26px;
   justify-content: flex-start;
+  @include media($md) {
+    margin-bottom: 24px;
+  }
 }
 .form__label--inline-check:not(:last-child) {
   margin-bottom: 24px;

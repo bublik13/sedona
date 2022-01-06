@@ -11,3 +11,14 @@
 .wrap--top {
   padding-top: 14px;
 }
+.wrap--1 {
+  @include media($md) {
+    order: 2;
+  }
+}
+.wrap--2 {
+  @include media($md) {
+    order: 3;
+    width: 80%;
+  }
+}

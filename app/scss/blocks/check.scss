@@ -50,18 +50,12 @@
   opacity: 1;
   transform: scale(1);
 }
-.check:focus ~ .check__pseudo:after {
-  opacity: 0.3;
-}
 .check:focus ~ .check__pseudo {
   background-color: $body-bg-radio;
 }
 .check:checked ~ .check__pseudo-img:after {
   opacity: 1;
   transform: scale(1);
-}
-.check:focus ~ .check__pseudo-img:after {
-  opacity: 0.3;
 }
 .check:focus ~ .check__pseudo-img {
   background-color: $body-bg-radio;
