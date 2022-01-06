@@ -13,6 +13,9 @@
 }
 .reasons__top--height {
   padding: 36px 16px 12px;
+  @include media($md) {
+    padding: 62px 16px 62px;
+  }
 }
 .reasons__title {
   max-width: 320px;
@@ -24,8 +27,11 @@
     max-width: 520px;
   }
 }
-.reasons__title--mb{
+.reasons__title--mb {
   margin-bottom: 28px;
+  @include media($md) {
+    margin-bottom: 32px;
+  }
 }
 .reasons__subtitle {
   max-width: 320px;
@@ -34,6 +40,11 @@
   text-align: center;
   @include media($md) {
     max-width: 520px;
+  }
+}
+.reasons__subtitle--width{
+  @include media($md) {
+    max-width: 447px;
   }
 }
 .reasons__info {

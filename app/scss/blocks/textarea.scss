@@ -12,6 +12,8 @@
   cursor: pointer;
   @include media($md) {
     max-width: 648px;
+    padding: 16px 20px;
+    margin-bottom: 57px;
   }
   &:hover {
     background-color: $disabled;

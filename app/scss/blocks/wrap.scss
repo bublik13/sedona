@@ -1,24 +1,51 @@
 .wrap {
   padding: 19px 20px 26px;
   border-top: 1px solid $disabled;
+  @include media($md) {
+    border-top: 1px solid transparent;
+  }
 }
 .wrap--bt {
   padding-bottom: 28px;
+  @include media($md) {
+    padding-right: 38px;
+  }
 }
 .wrap--bt-xs {
   padding-bottom: 25px;
 }
+.wrap--lf-rg {
+  @include media($md) {
+    padding-left: 59px;
+    padding-right: 58px;
+  }
+}
 .wrap--top {
   padding-top: 14px;
+  @include media($md) {
+    padding-top: 23px;
+  }
+}
+.wrap--top-md {
+  @include media($md) {
+    padding-top: 42px;
+    padding-left: 38px;
+  }
 }
 .wrap--1 {
   @include media($md) {
     order: 2;
+    width: 40%;
   }
 }
 .wrap--2 {
   @include media($md) {
     order: 3;
-    width: 80%;
+    width: 100%;
+  }
+}
+.wrap--3 {
+  @include media($md) {
+    width: 50%;
   }
 }

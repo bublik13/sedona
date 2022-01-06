@@ -63,7 +63,8 @@
 .header__container-center {
   position: relative;
   padding: 95px 0 79px;
-  background: url("../img/header/back-mobile-2x.jpg") bottom right/ cover no-repeat;
+  background: url("../img/header/back-mobile-2x.jpg") bottom right/ cover
+    no-repeat;
   background-color: $nav-bg;
   @include media($md) {
     padding: 77px 0 90px;
@@ -80,11 +81,17 @@
     padding: 80px 0 87px;
   }
 }
-.header__top--height{
+.header__top--height {
   padding-bottom: 56px;
+  @include media($md) {
+    padding-bottom: 11px;
+  }
 }
-.header__container-width{
+.header__container-width {
   padding: 52px 0 66px;
+  @include media($md) {
+    padding: 94px 0 116px;
+  }
 }
 .header__container-center:after {
   content: " ";
@@ -94,7 +101,8 @@
   position: absolute;
   height: 57px;
   width: 100%;
-  background: url(../img/header/intro-triangle.svg) center center/ cover no-repeat;
+  background: url(../img/header/intro-triangle.svg) center center/ cover
+    no-repeat;
   margin-bottom: -1px;
 }
 .header__back {

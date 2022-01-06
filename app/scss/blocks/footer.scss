@@ -12,8 +12,11 @@
     padding: 36px 33px 36px 37px;
   }
 }
-.footer__container--pd{
+.footer__container--pd {
   padding-top: 49px;
+  @include media($md) {
+    padding-top: 71px;
+  }
 }
 .footer__info {
   @include media($md) {
@@ -82,7 +85,6 @@
   @include font(14px, 26px, 400);
   @include media($md) {
     margin-right: 12px;
-    margin-top: 3px;
   }
   @include media($lg) {
     margin-right: 13px;

@@ -32,7 +32,7 @@
     </svg>
 </head>
 <body class="body js-body">
-    <!-- <img class="pp" src="img/form/mobile1.jpg" alt=""> -->
+    <!-- <img class="pp" src="img/form/tablet.jpg" alt=""> -->
    <style>
      .pp{
        position: absolute;
@@ -91,7 +91,7 @@
         <h2 class="reasons__title h2 h2--lh reasons__title--mb">
           ОСТАТЬЕ СВОЙ ОТЗЫВ
         </h2>
-        <p class="reasons__subtitle subtitle">
+        <p class="reasons__subtitle subtitle reasons__subtitle--width">
           ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВТЬЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ
         </p>
       </div>
@@ -103,7 +103,7 @@
         <div class="form__inline">
           <div class="form__wrap wrap wrap--1">
             <fieldset class="form__column">
-              <legend class="form__title title title--mg-sm">ПРЕДСТАВТЕСЬ:</legend>
+              <legend class="form__title title title--mg-sm">ПРЕДСТАВЬТЕСЬ:</legend>
               <label class="form__label form__label--inline-input">
                 <span class="form__name name name--top name--right"> ИМЯ*:</span>
                 <input placeholder="Петр" type="text" class="form__input input">
@@ -118,8 +118,8 @@
               </label>
             </fieldset>
           </div>
-          <div class="form__wrap wrap wrap--bt wrap--2">
-            <fieldset class="form__column">
+          <div class="form__wrap wrap wrap--bt wrap--top-md wrap--2">
+            <fieldset class="form__column form__column--border-top">
               <legend class="form__title title title--mg-xs">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
               <label class="form__label form__label--column">
                 <span class="form__name name name--left"> КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
@@ -146,7 +146,7 @@
             </fieldset>
           </div>
           <div class="form__wrap wrap wrap--bt wrap--3">
-            <fieldset class="form__column">
+            <fieldset class="form__column form__column--border-right">
               <legend class="form__title title title--mg-md">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
               <label class="form__label form__label--inline-radio">
                 <input name="radio" type="radio" class="form__check check">
@@ -167,8 +167,8 @@
           </div>
         </div>
         <div class="form__wrap wrap wrap--top wrap--bt-xs wrap--4">
-          <fieldset class="form__column">
-            <legend class="form__title title title--mg-md">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
+          <fieldset class="form__column form__column--border-top">
+            <legend class="form__title title title--mg-md title--mg-lg">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
             <div class="form__label-wrap">
               <label class="form__label form__label--inline-check">
                 <input type="checkbox" class="form__check check">
@@ -193,10 +193,13 @@
             </div> 
           </fieldset>
         </div>
-        <div class="form__wrap wrap wrap--5">
+        <div class="form__wrap wrap wrap--lf-rg wrap--5">
           <legend class="form__title title title--mg-x">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
           <textarea class="form__textarea textarea"placeholder="Опишите подробно все свои восторги"></textarea>
-          <a class="form__button _disabled button button--width" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
+          <div class="form__wrap-button">
+            <a class="form__button _disabled button button--width" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
+            <div class="form__button-text">* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</div>
+          </div>
         </div>
       </form>
     </div>
