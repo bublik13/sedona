@@ -10,7 +10,7 @@
   background-color: $body-bg-input;
   padding: 12px 20px;
   @include media($md) {
-    max-width: 648px;
+    // max-width: 648px;
     padding: 16px 20px;
     margin-bottom: 57px;
   }

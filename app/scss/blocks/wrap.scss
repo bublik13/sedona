@@ -8,8 +8,11 @@
 .wrap--bt {
   padding-bottom: 28px;
   @include media($md) {
-    padding-right: 38px;
+    padding-right: 59px;
   }
+}
+.wrap--lf-xs{
+  padding-left: 3px;
 }
 .wrap--bt-xs {
   padding-bottom: 25px;
@@ -53,7 +56,7 @@
 .wrap--top-md {
   @include media($md) {
     padding-top: 42px;
-    padding-left: 38px;
+    padding-left: 60px;
     @include media($lg) {
       padding-top: 39px;
       padding-left: 120px;
@@ -74,6 +77,12 @@
   }
 }
 .wrap--3 {
+  display: flex;
+
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+
   @include media($md) {
     width: 50%;
   }
