@@ -17,6 +17,9 @@
   @include media($md) {
     padding-top: 71px;
   }
+  @include media($lg) {
+    padding-top: 77px;
+  }
 }
 .footer__info {
   @include media($md) {

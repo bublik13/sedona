@@ -14,10 +14,34 @@
 .wrap--bt-xs {
   padding-bottom: 25px;
 }
+.wrap--lf-lg {
+  @include media($md) {
+    padding-left: 59px;
+    padding-right: 58px;
+  }
+  @include media($lg) {
+    padding-left: 119px;
+    padding-right: 119px;
+    padding-top: 43px;
+  }
+}
+.wrap--lf {
+  @include media($md) {
+    padding-left: 58px;
+    padding-right: 0;
+  }
+  @include media($lg) {
+    padding-left: 123px;
+  }
+}
 .wrap--lf-rg {
   @include media($md) {
     padding-left: 59px;
     padding-right: 58px;
+  }
+  @include media($lg) {
+    padding-left: 79px;
+    padding-right: 119px;
   }
 }
 .wrap--top {
@@ -30,12 +54,17 @@
   @include media($md) {
     padding-top: 42px;
     padding-left: 38px;
+    @include media($lg) {
+      padding-top: 39px;
+      padding-left: 120px;
+      padding-right: 121px;
+    }
   }
 }
 .wrap--1 {
   @include media($md) {
     order: 2;
-    width: 40%;
+    width: 50%;
   }
 }
 .wrap--2 {

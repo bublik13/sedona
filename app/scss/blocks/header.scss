@@ -92,6 +92,9 @@
   @include media($md) {
     padding: 94px 0 116px;
   }
+  @include media($lg) {
+    padding: 101px 0 120px;
+  }
 }
 .header__container-center:after {
   content: " ";

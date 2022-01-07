@@ -13,4 +13,18 @@
 }
 .name--left {
   margin-left: 21px;
+  @include media($lg) {
+    margin-left: -2px;
+    margin-right: 17px;
+    margin-top: 8px;
+  }
+}
+.name--hidden {
+  @include media($lg) {
+    width: 70px;
+    height: 26px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+  }
 }

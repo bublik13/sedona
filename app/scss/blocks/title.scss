@@ -12,12 +12,18 @@
   @include media($md) {
     margin-bottom: 57px;
   }
+  @include media($lg) {
+    margin-bottom: 53px;
+  }
 }
 .title--mg-xs {
   margin-bottom: 17px;
   @include media($md) {
     margin-bottom: 22px;
     width: 400px;
+  }
+  @include media($lg) {
+    margin-bottom: 66px;
   }
 }
 .title--mg-sm {
@@ -32,6 +38,9 @@
   @include media($md) {
     margin-bottom: 58px;
     margin-left: 3px;
+  }
+  @include media($lg) {
+    margin-left: 76px;
   }
 }
 .title--mg-lg {

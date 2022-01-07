@@ -75,7 +75,7 @@
 }
 .nav__link:hover {
   @include media($md) {
-    color: $second-color;
+    color: $nav-bg;
   }
 }
 .nav__link:focus {

@@ -16,6 +16,9 @@
   @include media($md) {
     padding: 62px 16px 62px;
   }
+  @include media($lg) {
+    padding: 112px 16px 35px;
+  }
 }
 .reasons__title {
   max-width: 320px;

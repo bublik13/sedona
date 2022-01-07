@@ -24,6 +24,15 @@
   @include media($md) {
     max-width: 648px;
   }
+  @include media($lg) {
+    max-width: 1200px;
+  }
+}
+.form__row {
+  @include media($lg) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .form__column--border-top {
   @include media($md) {
@@ -42,6 +51,10 @@
     grid-gap: 8px 57px;
     margin: 0 auto;
   }
+  @include media($lg) {
+    grid-template-columns: 230px 228px 209px 199px;
+    grid-gap: 30px;
+  }
 }
 .form__label {
   display: flex;
@@ -52,11 +65,18 @@
 .form__label--column {
   display: flex;
   flex-direction: column;
+  @include media($lg) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 .form__label--column:not(:last-child) {
   margin-bottom: 12px;
   @include media($md) {
     margin-bottom: 24px;
+  }
+  @include media($lg) {
+    margin-bottom: 0;
   }
 }
 .form__box {
@@ -75,9 +95,15 @@
   @include media($md) {
     margin-bottom: 24px;
   }
+  @include media($lg) {
+    margin-bottom: 0;
+  }
 }
 .form__label--inline-check:not(:last-child) {
   margin-bottom: 24px;
+  @include media($lg) {
+    margin-bottom: 0;
+  }
 }
 .form__label--inline-radio {
   align-items: center;
@@ -109,6 +135,10 @@
   @include media($md) {
     margin-left: 0;
     width: 326px;
+  }
+  width: 481px;
+  @include media($lg) {
+    width: 481px;
   }
 }
 .form__button-text {
