@@ -9,7 +9,6 @@
   border: none;
   background-color: $body-bg-input;
   padding: 12px 20px;
-  cursor: pointer;
   @include media($md) {
     max-width: 648px;
     padding: 16px 20px;
