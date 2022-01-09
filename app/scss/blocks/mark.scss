@@ -1,0 +1,44 @@
+.mark {
+  position: relative;
+}
+.mark:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.mark:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background: $body-bg;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  @include media($md) {
+    top: 47%;
+    left: 48%;
+  }
+}
+.mark:before {
+  content: " ";
+  position: absolute;
+  top: 52%;
+  right: 0;
+  bottom: 0;
+  left: 52%;
+  background: $nav-bg;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  z-index: 2;
+  @include media($md) {
+    top: 48%;
+    left: 49%;
+  }
+}
