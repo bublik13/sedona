@@ -5,8 +5,8 @@
   height: 1px;
   margin: -1px;
 }
-.check__pseudo,
-.check__pseudo-img {
+.check-pseudo,
+.check-pseudo-img {
   flex-shrink: 0;
   width: 56px;
   height: 56px;
@@ -21,13 +21,13 @@
     background-color: $disabled;
   }
 }
-.check--radius {
+.check-pseudo--radius {
   border-radius: 50%;
 }
-.check--radius-xs {
+.check-pseudo-img--radius-xs {
   border-radius: 8px;
 }
-.check__pseudo:after {
+.check-pseudo:after {
   content: " ";
   border-radius: 50%;
   width: 20px;
@@ -37,7 +37,7 @@
   transform: scale(0);
   transition: opacity 0.2s, transform 0.2s ease;
 }
-.check__pseudo-img:after {
+.check-pseudo-img:after {
   content: " ";
   width: 24px;
   height: 17px;
@@ -46,17 +46,17 @@
   transform: scale(0);
   transition: opacity 0.2s, transform 0.2s ease;
 }
-.check:checked ~ .check__pseudo:after {
+.check:checked ~ .check-pseudo:after {
   opacity: 1;
   transform: scale(1);
 }
-.check:focus ~ .check__pseudo {
+.check:focus ~ .check-pseudo {
   background-color: $body-bg-radio;
 }
-.check:checked ~ .check__pseudo-img:after {
+.check:checked ~ .check-pseudo-img:after {
   opacity: 1;
   transform: scale(1);
 }
-.check:focus ~ .check__pseudo-img {
+.check:focus ~ .check-pseudo-img {
   background-color: $body-bg-radio;
 }

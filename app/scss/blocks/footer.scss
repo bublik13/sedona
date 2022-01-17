@@ -50,7 +50,7 @@
     margin-bottom: 0;
   }
 }
-.social__link {
+.footer__link {
   width: 47px;
   height: 48px;
   background-color: $nav-bg;
@@ -70,7 +70,7 @@
     color: rgba(255, 255, 255, 0.3);
   }
 }
-.social__item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-right: 6px;
 }
 .footer__social {
