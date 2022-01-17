@@ -1,0 +1,117 @@
+.footer__container {
+  padding-top: 39px;
+  padding-bottom: 23px;
+  background-color: $body-bg;
+  @include media($md) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 17px;
+    padding-right: 13px;
+  }
+  @include media($lg) {
+    padding: 36px 33px 36px 37px;
+  }
+}
+.footer__container--pd {
+  padding-top: 49px;
+  @include media($md) {
+    padding-top: 71px;
+  }
+  @include media($lg) {
+    padding-top: 77px;
+  }
+}
+.footer__info {
+  @include media($md) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-gap: 37px;
+  }
+  @include media($lg) {
+    grid-gap: 110px;
+  }
+}
+.footer__title {
+  margin-bottom: 34px;
+  text-align: center;
+  @include font(21px, 26px, 700);
+  @include media($md) {
+    margin-bottom: 0;
+  }
+}
+.footer__socials {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+
+  @include media($md) {
+    margin-bottom: 0;
+  }
+}
+.footer__link {
+  width: 47px;
+  height: 48px;
+  background-color: $nav-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  color: #fff;
+  transition: 0.2s;
+  &:hover {
+    background-color: $body-bg-hover;
+  }
+  &:active {
+    background-color: $body-bg-focus;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+.footer__item:not(:last-child) {
+  margin-right: 6px;
+}
+.footer__social {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__desc {
+  margin-right: 15px;
+  @include font(14px, 26px, 400);
+  @include media($md) {
+    margin-right: 12px;
+  }
+  @include media($lg) {
+    margin-right: 13px;
+    margin-top: 3px;
+  }
+}
+.footer__logo {
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  color: $brand-color;
+  &:hover {
+    color: $nav-bg;
+  }
+  &:active {
+    color: $brand-color;
+    opacity: 0.3;
+  }
+}
+.footer__img {
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  display: block;
+  width: 27px;
+  height: 34px;
+}

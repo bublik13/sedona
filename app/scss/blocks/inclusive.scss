@@ -9,8 +9,8 @@
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   padding: 0 16px 16px;
+  justify-content: center;
   @include media($md) {
-    justify-content: center;
     grid-template-rows: none;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 0 60px;

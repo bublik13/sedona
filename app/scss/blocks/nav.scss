@@ -4,8 +4,8 @@
   align-items: center;
   text-align: center;
 }
-.nav:before{
-  content: ' ';
+.nav:before {
+  content: " ";
   position: absolute;
   right: 0;
   left: 0;
@@ -34,8 +34,8 @@
     width: 20%;
   }
 }
-.nav__item:not(:last-child):before{
-  content: ' ';
+.nav__item:not(:last-child):before {
+  content: " ";
   position: absolute;
   right: 0;
   left: 0;
@@ -75,7 +75,7 @@
 }
 .nav__link:hover {
   @include media($md) {
-    color: $second-color;
+    color: $nav-bg;
   }
 }
 .nav__link:focus {
@@ -85,7 +85,7 @@
     opacity: 0.3;
   }
 }
-.nav__link--active{
+.nav__link--active {
   @include media($md) {
     color: $active;
   }

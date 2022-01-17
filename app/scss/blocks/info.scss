@@ -56,7 +56,7 @@
 .info__item:not(:last-child) {
   border-bottom: 1px solid $border-color;
   @include media($md) {
-    border-bottom: 0 ;
+    border-bottom: 0;
   }
 }
 .info__h3 {

@@ -4,3 +4,9 @@
     @include font(21px, 26px, 700);
   }
 }
+.h2--lh {
+  @include font(19px, 24px, 700);
+  @include media($md) {
+    @include font(30px, 26px, 700);
+  }
+}

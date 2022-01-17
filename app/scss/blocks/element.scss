@@ -1,0 +1,15 @@
+.element {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: $body-bg-icon;
+  flex-shrink: 0;
+}
+.element__icon {
+  width: 18px;
+  height: 18px;
+}

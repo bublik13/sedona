@@ -2,13 +2,22 @@
   padding: 0;
 }
 .reasons__top {
-  background-color:$body-bg;
+  background-color: $body-bg;
   padding: 49px 16px 14px;
   @include media($md) {
     padding: 45px 140px 52px;
   }
   @include media($lg) {
     padding: 55px 140px 43px;
+  }
+}
+.reasons__top--height {
+  padding: 36px 16px 12px;
+  @include media($md) {
+    padding: 62px 16px 62px;
+  }
+  @include media($lg) {
+    padding: 112px 16px 35px;
   }
 }
 .reasons__title {
@@ -21,6 +30,12 @@
     max-width: 520px;
   }
 }
+.reasons__title--mb {
+  margin-bottom: 28px;
+  @include media($md) {
+    margin-bottom: 32px;
+  }
+}
 .reasons__subtitle {
   max-width: 320px;
   margin: 0 auto;
@@ -30,7 +45,12 @@
     max-width: 520px;
   }
 }
-.reasons__info{
+.reasons__subtitle--width{
+  @include media($md) {
+    max-width: 447px;
+  }
+}
+.reasons__info {
   color: $second-color;
   background-color: $nav-bg;
 }
