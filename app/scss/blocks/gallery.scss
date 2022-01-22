@@ -1,0 +1,48 @@
+.gallery__container {
+  padding: 35px 0 0;
+}
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery__item {
+  padding: 22px 20px 3px 20px;
+  position: relative;
+  border-top: 1px solid $disabled;
+  flex-grow: 2;
+}
+.gallery__item--width {
+  width: 100%;
+}
+.gallery__wrap {
+}
+.gallery__img {
+}
+.gallery__img--width {
+  width: 100%;
+}
+.gallery__bottom {
+  padding: 11px 0 16px;
+}
+.gallery__label {
+}
+.gallery__label-text {
+  @include font(14px, 24px, 700);
+}
+.gallery__label-name {
+  @include font(14px, 24px, 400);
+}
+.gallery__label-icon {
+  display: flex;
+  padding-top: 10px;
+}
+.gallery__icon {
+  width: 23px;
+  height: 21px;
+  display: block;
+  margin-right: 14px;
+  color: $grey-bg;
+}
+.gallery__number {
+  @include font(14px, 24px, 700);
+}

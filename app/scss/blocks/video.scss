@@ -1,0 +1,33 @@
+.video {
+  background: url("../img/video/video-mobile-2x.jpg") center center/ cover
+    no-repeat;
+  background-color: $nav-bg;
+  min-height: 202px;
+  position: relative;
+  padding: 0 20px;
+  @include media($md) {
+    background-image: -webkit-image-set(
+      url("../img/video/video-desktop-1x.jpg") 1x,
+      url("../img/video/video-desktop-2x.webp") 2x
+    );
+    background-image: image-set(
+      url("../img/video/video-desktop-1x.jpg") 1x,
+      url("../img/video/video-desktop-2x.webp") 2x
+    );
+  }
+}
+.video__wrap-button {
+  background-color: yellow;
+  position: absolute;
+  bottom: -69px;
+  width: 87%;
+  background-color: $body-bg-input;
+  padding: 23px 18px 23px 16px;
+  display: flex;
+}
+.video__button-icon:nth-child(1) {
+  margin-right: auto;
+}
+.video__button-icon:nth-child(2) {
+    margin-right: 24px;
+  }

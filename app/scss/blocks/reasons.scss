@@ -20,6 +20,12 @@
     padding: 112px 16px 35px;
   }
 }
+.reasons__top--height-xs{
+  padding: 26px 16px 0px;
+}
+.reasons__top--height-lg{
+  padding: 34px 23px 0px;
+}
 .reasons__title {
   max-width: 320px;
   margin: 0 auto;
@@ -49,6 +55,9 @@
   @include media($md) {
     max-width: 447px;
   }
+}
+.reasons__subtitle--mb{
+  margin-bottom: 28px;
 }
 .reasons__info {
   color: $second-color;
