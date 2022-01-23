@@ -6,11 +6,18 @@
   transition: ease-out 0.2s;
   outline: transparent;
   background-color: $body-bg-input;
+  @include media($md) {
+    background-color: transparent;
+    z-index: 1;
+  }
 }
 .button-icon-img {
   width: 32px;
   height: 20px;
   color: $icon-button-bg;
+  @include media($md) {
+    color: $body-bg;
+  }
   &:hover {
     color: $name-color;
   }

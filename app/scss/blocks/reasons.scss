@@ -1,6 +1,11 @@
 .reasons__container {
   padding: 0;
 }
+.reasons__container--md {
+  @include media($md) {
+    padding: 0 60px;
+  }
+}
 .reasons__top {
   background-color: $body-bg;
   padding: 49px 16px 14px;
@@ -22,9 +27,15 @@
 }
 .reasons__top--height-xs{
   padding: 26px 16px 0px;
+  @include media($md) {
+    padding-top: 58px;
+  }
 }
 .reasons__top--height-lg{
   padding: 34px 23px 0px;
+  @include media($md) {
+    padding-top: 59px;
+  }
 }
 .reasons__title {
   max-width: 320px;
@@ -58,6 +69,12 @@
 }
 .reasons__subtitle--mb{
   margin-bottom: 28px;
+}
+.reasons__subtitle--mb-md {
+  margin-bottom: 28px;
+  @include media($md) {
+    margin-bottom: 76px;
+  }
 }
 .reasons__info {
   color: $second-color;

@@ -15,19 +15,30 @@
       url("../img/video/video-desktop-2x.webp") 2x
     );
   }
+  min-height: 500px;
+  padding: 30px 0 0;
+  @include media($lg) {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 .video__wrap-button {
-  background-color: yellow;
   position: absolute;
   bottom: -69px;
   width: 87%;
   background-color: $body-bg-input;
   padding: 23px 18px 23px 16px;
   display: flex;
+  @include media($md) {
+    bottom: 0px;
+    background-color: transparent;
+    width: 100%;
+    padding: 29px 37px 34px 28px;
+  }
 }
 .video__button-icon:nth-child(1) {
   margin-right: auto;
 }
 .video__button-icon:nth-child(2) {
-    margin-right: 24px;
-  }
+  margin-right: 24px;
+}
