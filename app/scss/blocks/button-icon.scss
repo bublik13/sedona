@@ -15,14 +15,23 @@
   width: 32px;
   height: 20px;
   color: $icon-button-bg;
+  transition: ease-out 0.2s;
   @include media($md) {
     color: $body-bg;
   }
   &:hover {
     color: $name-color;
+    @include media($lg) {
+      color: $second-color;
+      opacity: 0.6;
+    }
   }
   &:focus {
     color: $name-color;
     opacity: 0.3;
+    @include media($lg) {
+      color: $second-color;
+      opacity: 0.3;
+    }
   }
 }

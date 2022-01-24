@@ -6,13 +6,16 @@
   bottom: 0;
   width: 87%;
   text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
   @include media($md) {
     width: 100%;
     padding: 30px 115px 38px 43px;
     z-index: 1;
+    left: 0;
+    transform: none;
   }
 }
-
 input[type="range"] {
   -webkit-appearance: none !important;
   height: 3px;

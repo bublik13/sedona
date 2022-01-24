@@ -5,6 +5,11 @@
     padding-left: 60px;
     padding-top: 81px;
   }
+  @include media($lg) {
+    padding-top: 78px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 .gallery__list {
   display: flex;
@@ -22,7 +27,7 @@
     border-top: 0px solid transparent;
   }
   @include media($lg) {
-    width: 35%;
+    width: 33.33%;
   }
 }
 .gallery__item--width {
@@ -33,14 +38,13 @@
     width: 50%;
   }
   @include media($lg) {
-    width: 30%;
+    width: 33.33%;
   }
 }
-.gallery__wrap {
-}
 .gallery__img {
-  width: 100%;
+  width: auto;
   @include media($md) {
+    width: 100%;
     max-height: 266px;
   }
 }
@@ -58,12 +62,31 @@
     display: flex;
     justify-content: space-between;
   }
+  @include media($lg) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $grey-bg;
+  }
+  @include media($lg) {
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
 }
 .gallery__label-text {
   @include font(14px, 24px, 700);
+  color: $brand-color;
+  @include media($lg) {
+    color: $second-color;
+  }
 }
 .gallery__label-name {
   @include font(14px, 24px, 400);
+  color: $brand-color;
+  @include media($lg) {
+    color: $second-color;
+  }
 }
 .gallery__label-icon {
   display: flex;
@@ -75,7 +98,14 @@
   display: block;
   margin-right: 14px;
   color: $grey-bg;
+  @include media($lg) {
+    color: $second-color;
+  }
 }
 .gallery__number {
   @include font(14px, 24px, 700);
+  color: $brand-color;
+  @include media($lg) {
+    color: $second-color;
+  }
 }

@@ -5,6 +5,9 @@
   @include media($md) {
     padding: 0 60px;
   }
+  @include media($lg) {
+    padding-bottom: 48px;
+  }
 }
 .reasons__top {
   background-color: $body-bg;
@@ -29,6 +32,9 @@
   padding: 26px 16px 0px;
   @include media($md) {
     padding-top: 58px;
+  }
+  @include media($lg) {
+    padding-top: 100px;
   }
 }
 .reasons__top--height-lg{
@@ -73,7 +79,7 @@
 .reasons__subtitle--mb-md {
   margin-bottom: 28px;
   @include media($md) {
-    margin-bottom: 76px;
+    margin-bottom: 77px;
   }
 }
 .reasons__info {
