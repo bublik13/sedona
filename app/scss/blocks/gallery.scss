@@ -30,6 +30,12 @@
     width: 33.33%;
   }
 }
+.gallery__item:last-child {
+  border-bottom: 1px solid $disabled;
+  @include media($md) {
+    border-top: 0px solid transparent;
+  }
+}
 .gallery__item--width {
   width: 100%;
 }

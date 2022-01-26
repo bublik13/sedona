@@ -1,25 +1,15 @@
 .video {
-  background: url("../img/video/video-mobile-2x.jpg") center center/ cover
-    no-repeat;
   background-color: $nav-bg;
-  min-height: 202px;
   position: relative;
-  padding: 0 20px;
-  @include media($md) {
-    min-height: 500px;
-    padding: 30px 0 0;
-    background-image: -webkit-image-set(
-      url("../img/video/video-desktop-1x.jpg") 1x,
-      url("../img/video/video-desktop-2x.webp") 2x
-    );
-    background-image: image-set(
-      url("../img/video/video-desktop-1x.jpg") 1x,
-      url("../img/video/video-desktop-2x.webp") 2x
-    );
-  }
   @include media($lg) {
     max-width: 800px;
     margin: 0 auto;
+  }
+}
+.video__img {
+  width: 100%;
+  @include media($md) {
+    min-height: 500px;
   }
 }
 .video__wrap-button {
