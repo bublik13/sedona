@@ -1,0 +1,38 @@
+.video {
+  background-color: $nav-bg;
+  position: relative;
+  @include media($lg) {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+.video__img {
+  width: 100%;
+  @include media($md) {
+    min-height: 500px;
+  }
+}
+.video__wrap-button {
+  position: absolute;
+  bottom: -69px;
+  width: 87%;
+  background-color: $body-bg-input;
+  padding: 23px 18px 23px 16px;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  @include media($md) {
+    bottom: 0px;
+    background-color: transparent;
+    width: 100%;
+    padding: 29px 37px 34px 28px;
+    left: 0;
+    transform: none;
+  }
+}
+.video__button-icon:nth-child(1) {
+  margin-right: auto;
+}
+.video__button-icon:nth-child(2) {
+  margin-right: 24px;
+}

@@ -21,6 +21,12 @@
     padding-top: 77px;
   }
 }
+.footer__container--pb {
+  padding-top: 142px;
+  @include media($md) {
+    padding-top: 76px;
+  }
+}
 .footer__info {
   @include media($md) {
     display: grid;

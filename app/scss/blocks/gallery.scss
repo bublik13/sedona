@@ -1,0 +1,117 @@
+.gallery__container {
+  padding: 35px 0 0;
+  @include media($md) {
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 81px;
+  }
+  @include media($lg) {
+    padding-top: 78px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery__item {
+  padding: 22px 20px 3px 20px;
+  position: relative;
+  border-top: 1px solid $disabled;
+  flex-grow: 2;
+  @include media($md) {
+    padding: 0px;
+    flex-grow: 0;
+    width: 50%;
+    border-top: 0px solid transparent;
+  }
+  @include media($lg) {
+    width: 33.33%;
+  }
+}
+.gallery__item:last-child {
+  border-bottom: 1px solid $disabled;
+  @include media($md) {
+    border-top: 0px solid transparent;
+  }
+}
+.gallery__item--width {
+  width: 100%;
+}
+.gallery__item--width-xs {
+  @include media($md) {
+    width: 50%;
+  }
+  @include media($lg) {
+    width: 33.33%;
+  }
+}
+.gallery__img {
+  width: auto;
+  @include media($md) {
+    width: 100%;
+    max-height: 266px;
+  }
+}
+.gallery__img--width {
+  width: 100%;
+  @include media($md) {
+    min-height: 400px;
+  }
+}
+.gallery__bottom {
+  padding: 11px 0 16px;
+  @include media($md) {
+    background-color: $body-bg-input;
+    padding: 18px 20px 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @include media($lg) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $grey-bg;
+  }
+  @include media($lg) {
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
+}
+.gallery__label-text {
+  @include font(14px, 24px, 700);
+  color: $brand-color;
+  @include media($lg) {
+    color: $second-color;
+  }
+}
+.gallery__label-name {
+  @include font(14px, 24px, 400);
+  color: $brand-color;
+  @include media($lg) {
+    color: $second-color;
+  }
+}
+.gallery__label-icon {
+  display: flex;
+  padding-top: 10px;
+}
+.gallery__icon {
+  width: 23px;
+  height: 21px;
+  display: block;
+  margin-right: 14px;
+  color: $grey-bg;
+  @include media($lg) {
+    color: $second-color;
+  }
+}
+.gallery__number {
+  @include font(14px, 24px, 700);
+  color: $brand-color;
+  @include media($lg) {
+    color: $second-color;
+  }
+}
