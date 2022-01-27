@@ -23,7 +23,8 @@
     width: 100%;
   }
   @include media($lg) {
-    max-width: 1200px;
+    max-width: 960px;
+    margin: 0 auto;
   }
 }
 .form__row {

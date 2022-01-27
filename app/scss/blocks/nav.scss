@@ -85,17 +85,17 @@
     opacity: 0.3;
   }
 }
-.nav__link--active {
+.nav__link--active:active {
   @include media($md) {
     color: $active;
   }
 }
-.nav__link--active:hover {
+.nav__link--active:active:hover {
   @include media($md) {
     color: $active-hover;
   }
 }
-.nav__link--active:active {
+.nav__link--active:active:focus{
   @include media($md) {
     color: $active-focus;
     opacity: 0.3;
