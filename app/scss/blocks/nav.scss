@@ -85,7 +85,7 @@
     opacity: 0.3;
   }
 }
-.nav__link--active {
+.nav__link--active{
   @include media($md) {
     color: $active;
   }
