@@ -1,13 +1,6 @@
 .map__container {
   padding: 0;
-}
-.map__wrap:before {
-  position: absolute;
-  width: 27px;
-  height: 27px;
-  background-color: $body-bg;
-  border-radius: 50%;
-  top: 0;
+  position: relative;
 }
 .map__wrap {
   position: relative;
@@ -20,4 +13,14 @@
   @include media($md) {
     height: 100%;
   }
+}
+.map__point {
+  width: 27px;
+  height: 27px;
+  background-color: $map-point-color;
+  border-radius: 50%;
+  border: 4px solid $map-point-outline-color;
+  position: absolute;
+  inset: 0;
+  margin: auto;
 }
